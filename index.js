@@ -6,9 +6,7 @@ app.get('/', (req, res) => {
   try {
     const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
     const params = {title:'Home', content:'Hello content!'}
-    const names = Object.keys(params)
-    const vals = Object.values(params)
-    const page = (new Function(...names, `return \`${this}\``))(...vals)
+    const page = renderTemplate(baseTemplate, params)
     
     res.send(page)
   } catch (e) {
@@ -22,8 +20,8 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
 
-function renderFile(filename, params) {
+function renderTemplate(template, params) {
   const names = Object.keys(params)
   const vals = Object.values(params)
-  return new Function(...names, `return \`${this}\``)(...vals)
+  return new Function(...names, `return \`${template}\``)(...vals)
 }
