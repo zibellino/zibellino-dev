@@ -5,7 +5,11 @@ const app = express()
 app.get('/', (req, res) => {
   try {
     const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
-    const page = renderFile(baseTemplate, {title: 'Home', content: '<h1>Home</h1>'})
+    const params = {title:'Home', content:'Hello content!'}
+    const names = Object.keys(params)
+    const vals = Object.values(params)
+    const page = (new Function(...names, `return \`${this}\``))(...vals)
+    
     res.send(page)
   } catch (e) {
     res.status(404)
