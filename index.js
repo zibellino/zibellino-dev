@@ -2,8 +2,8 @@ import express from 'express'
 import fs from 'fs'
 const app = express()
 
-app.use(express.static('style'))
-app.use(express.static('images'))
+app.use('/style', express.static('style'))
+app.use('/images', express.static('images'))
 
 app.get('/:page?', (req, res) => {
   try {
