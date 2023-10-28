@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "zibellino.dev",
   "main": "index.js",
+  "type": "module",
   "private": true,
   "scripts": {
     "start": "node index.js"
