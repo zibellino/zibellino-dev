@@ -5,7 +5,8 @@ const app = express()
 app.get('/', (req, res) => {
   try {
     const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
-    res.send(baseTemplate)
+    const page = renderFile(baseTemplate, {title: 'Home', content: '<h1>Home</h1>'})
+    res.send(page)
   } catch (e) {
     res.status(404)
     res.send('404')
@@ -14,7 +15,7 @@ app.get('/', (req, res) => {
 
 const port = parseInt(process.env.PORT) || 8080
 app.listen(port, () => {
-  console.log(`helloworld: listening on port ${port}`)
+  console.log(`Listening on port ${port}`)
 })
 
 function renderFile(filename, params) {
