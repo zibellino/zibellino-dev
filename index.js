@@ -2,10 +2,10 @@ import express from 'express'
 import fs from 'fs'
 const app = express()
 
-app.get('/', (req, res) => {
+app.get('/:page', (req, res) => {
   try {
     const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
-    const params = {title:'Home', content:'Hello content!'}
+    const params = {title: 'Home', content: req.params.page || 'base'}
     const page = renderTemplate(baseTemplate, params)
     
     res.send(page)
