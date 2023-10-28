@@ -1,9 +1,15 @@
 import express from 'express'
+import fs from 'fs'
 const app = express()
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'Cloud'
-  res.send(`New ${name}!`)
+  try {
+    const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
+    res.send(baseTemplate)
+  } catch (e) {
+    res.status(404)
+    res.send('404')
+  }
 })
 
 const port = parseInt(process.env.PORT) || 8080
