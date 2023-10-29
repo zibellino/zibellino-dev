@@ -8,7 +8,7 @@ app.use('/images', express.static('images'))
 app.get('/:page?', (req, res) => {
   try {
     const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
-    const params = {title: 'Home', content: req.params.page || 'base'}
+    const params = {title: capitalize(req.params.page || 'Home'), content: req.params.page || 'index'}
     const page = renderTemplate(baseTemplate, params)
     
     res.send(page)
@@ -22,6 +22,10 @@ const port = parseInt(process.env.PORT) || 8080
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1)
+}
 
 function renderTemplate(template, params) {
   const names = Object.keys(params)
