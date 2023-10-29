@@ -8,7 +8,8 @@ app.use('/images', express.static('images'))
 app.get('/:page?', (req, res) => {
   try {
     const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
-    const params = {title: capitalize(req.params.page || 'Home'), content: req.params.page || 'index'}
+    const content = fs.readFileSync('views/' + (req.params.page || 'index') + '.html', 'utf8')
+    const params = {title: capitalize(req.params.page || 'Home'), content: content}
     const page = renderTemplate(baseTemplate, params)
     
     res.send(page)
