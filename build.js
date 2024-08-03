@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const baseTemplate = fs.readFileSync('views/base.html', 'utf8')
+const baseTemplate = fs.readFileSync('base.html', 'utf8')
 const capitalize = s => s[0].toUpperCase() + s.slice(1)
 const renderTemplate = (template, params) => {
   const names = Object.keys(params)
