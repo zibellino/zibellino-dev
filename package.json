@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "description": "zibellino.dev",
   "author": "zibellino",
-  "license": "ISC"
+  "license": "ISC"'
+  "scripts" : {"build": "node build.js"}
 }
