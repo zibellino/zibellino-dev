@@ -1,4 +1,4 @@
-import fs from 'fs'
+mimport fs from 'fs'
 import path from 'path'
 
 const baseTemplate = fs.readFileSync('base.html', 'utf8')
@@ -17,7 +17,7 @@ fs.readdirSync('pages', {withFileTypes: true})
 .filter(page => !page.isDirectory())
 .forEach(page => {
   const title = page.name === 'index.html' ? 'Home' : capitalize(path.parse(page.name).name)
-  const content = fs.readFileSync('views/index.html', 'utf8')
+  const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
   const params = {title: title, content: content}
   const renderedPage = renderTemplate(baseTemplate, params)
 
