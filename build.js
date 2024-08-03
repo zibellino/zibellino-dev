@@ -6,6 +6,8 @@ const params = {title: 'Home', content: content}
 const page = renderTemplate(baseTemplate, params)
 fs.writeFileSync('public/index.html', page)
 fs.cpSync('images', 'public/images', {recursive: true})
+fs.cpSync('style', 'public/style', {recursive: true})
+
 
 function renderTemplate(template, params) {
   const names = Object.keys(params)
