@@ -10,7 +10,7 @@ const renderTemplate = (template, params) => {
 }
 const getTitle = (pageName) => {
   const titleSuffix = ' | Zibellino\'s'
-  const title = page.name === 'index.html' ? 'Home' : capitalize(path.parse(page.name).name)
+  const title = pageName === 'index.html' ? 'Home' : capitalize(path.parse(pageName).name)
   return title + titleSuffix
 }
 
