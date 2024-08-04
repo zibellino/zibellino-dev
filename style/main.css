@@ -9,14 +9,14 @@
 }
 
 a {
-	text-decoration: dotted dodgerblue;
+	text-decoration: underline dotted dodgerblue;
 	color: inherit;
 	display: inline-block;
 	padding: .5em;
 }
 
 a:visited {
-	text-decoration: dotted rebeccapurple;
+	text-decoration-color: rebeccapurple;
 }
 
 iframe {
