@@ -25,11 +25,12 @@ iframe {
 
 body {
 	font-family: "Josefin Sans";
-	background: snow;
+	background: black;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	padding-top: 5em;
+	color: ivory;
 }
 
 body > header {
