@@ -50,7 +50,7 @@ body > header {
 	font-weight: bold;
 	color: snow;
 	letter-spacing: 2px;
-	filter: drop-shadow(gray 0 2px 5px);
+	filter: drop-shadow(gray 0 1px 3px);
 }
 
 main,
