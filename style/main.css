@@ -15,8 +15,10 @@ a {
 	padding: .5em;
 }
 
+@media (prefers-color-scheme: dark) {
 a:visited {
 	text-decoration-color: rebeccapurple;
+}
 }
 
 iframe {
