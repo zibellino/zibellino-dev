@@ -17,7 +17,6 @@ const getTitle = (pageName) => {
 fs.mkdirSync('public')
 fs.cpSync('images', 'public/images', {recursive: true})
 fs.cpSync('style', 'public/style', {recursive: true})
-fs.cpSync('music', 'public/music', {recursive: true})
 
 fs.readdirSync('pages', {withFileTypes: true})
 .filter(page => !page.isDirectory())
