@@ -32,14 +32,16 @@ fs.readdirSync('pages', {withFileTypes: true})
       fs.mkdirSync(publicPath)
     }
 
-    const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
     const params = {
       page: path.parse(page.name).name,
       title: getTitle(page.name),
-      content: content,
       translations: translations,
       basePath: langPath,
     }
+
+    const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
+    params.content = renderTemplate(content, params)
+    
     const renderedPage = renderTemplate(baseTemplate, params)
 
     fs.writeFileSync(`${publicPath}${page.name}`, renderedPage)
