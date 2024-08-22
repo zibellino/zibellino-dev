@@ -31,7 +31,7 @@ fs.readdirSync('pages', {withFileTypes: true})
     const langCode = path.parse(langFile.name).name
     const langPath = langCode !== 'en' ? `${langCode}/` : ''
     const publicPath = `public/${langPath}`
-    if (langPath && fs.existsSync(publicPath)) {
+    if (langPath && !fs.existsSync(publicPath)) {
       fs.mkdirSync(publicPath)
     }
 
