@@ -30,8 +30,12 @@ fs.readdirSync('pages', {withFileTypes: true})
     const renderedPage = renderTemplate(baseTemplate, params)
     const langCode = path.parse(langFile.name).name
     const langPath = langCode !== 'en' ? `${langCode}/` : ''
+    const publicPath = `public/${langPath}`
+    if (langPath && fs.existsSync(publicPath)) {
+      fs.mkdirSync(publicPath)
+    }
 
-    fs.writeFileSync(`public/${langPath}${page.name}`, renderedPage)
+    fs.writeFileSync(`${publicPath}${page.name}`, renderedPage)
   })
 })
 
