@@ -21,12 +21,18 @@ fs.cpSync('style', 'public/style', {recursive: true})
 fs.readdirSync('pages', {withFileTypes: true})
 .filter(page => !page.isDirectory())
 .forEach(page => {
-  const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
-  const translations = JSON.parse(fs.readFileSync(`lang/en.json`, 'utf8'))
-  const params = {title: getTitle(page.name), content: content, translations: translations}
-  const renderedPage = renderTemplate(baseTemplate, params)
+  fs.readdirSync('lang', {withFileTypes: true})
+  .filter(langFile => !langFile.isDirectory())
+  .forEach(langFile => {
+    const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
+    const translations = JSON.parse(fs.readFileSync(`lang/${lang.name}`, 'utf8'))
+    const params = {title: getTitle(page.name), content: content, translations: translations}
+    const renderedPage = renderTemplate(baseTemplate, params)
+    const langCode = path.parse(langFile.name).name
+    const langPath = langCode !== 'en' ? `${langCode}/` : ''
 
-  fs.writeFileSync(`public/${page.name}`, renderedPage)
+    fs.writeFileSync(`public/${langPath}${page.name}`, renderedPage)
+  })
 })
 
 
