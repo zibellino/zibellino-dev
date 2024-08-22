@@ -24,7 +24,7 @@ fs.readdirSync('pages', {withFileTypes: true})
   fs.readdirSync('lang', {withFileTypes: true})
   .filter(langFile => !langFile.isDirectory())
   .forEach(langFile => {
-     const translations = JSON.parse(fs.readFileSync(`lang/${langFile.name}`, 'utf8'))
+    const translations = JSON.parse(fs.readFileSync(`lang/${langFile.name}`, 'utf8'))
     const langCode = path.parse(langFile.name).name
     const langPath = langCode !== 'en' ? `${langCode}/` : ''
     const publicPath = `public/${langPath}`
