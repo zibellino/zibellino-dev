@@ -22,7 +22,8 @@ fs.readdirSync('pages', {withFileTypes: true})
 .filter(page => !page.isDirectory())
 .forEach(page => {
   const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
-  const params = {title: getTitle(page.name), content: content}
+  const translations = JSON.parse(fs.readFileSync(`lang/en.json`, 'utf8'))
+  const params = {title: getTitle(page.name), content: content, translations: translations}
   const renderedPage = renderTemplate(baseTemplate, params)
 
   fs.writeFileSync(`public/${page.name}`, renderedPage)
