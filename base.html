@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="${lang.code}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/style/main.css">
-<title>${translations.header[page]} | Zibellino's</title>
+<title>${lang.header[page]} | Zibellino's</title>
 <header role="navigation">
-	<a href="/${basePath}">${translations.header.index}</a>
-	<a href="/${basePath}music">${translations.header.music}</a>
-	<a href="/${basePath}keyboard">${translations.header.keyboard}</a>
-	<a href="/${basePath}about">${translations.header.about}</a>
+	<a href="/${lang.path}">${lang.header.index}</a>
+	<a href="/${lang.path}music">${lang.header.music}</a>
+	<a href="/${lang.path}keyboard">${lang.header.keyboard}</a>
+	<a href="/${lang.path}about">${lang.header.about}</a>
 </header>
 ${content}
 <footer>
