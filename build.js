@@ -24,16 +24,22 @@ fs.readdirSync('pages', {withFileTypes: true})
   fs.readdirSync('lang', {withFileTypes: true})
   .filter(langFile => !langFile.isDirectory())
   .forEach(langFile => {
-    const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
-    const translations = JSON.parse(fs.readFileSync(`lang/${langFile.name}`, 'utf8'))
-    const params = {title: getTitle(page.name), content: content, translations: translations}
-    const renderedPage = renderTemplate(baseTemplate, params)
+     const translations = JSON.parse(fs.readFileSync(`lang/${langFile.name}`, 'utf8'))
     const langCode = path.parse(langFile.name).name
     const langPath = langCode !== 'en' ? `${langCode}/` : ''
     const publicPath = `public/${langPath}`
     if (langPath && !fs.existsSync(publicPath)) {
       fs.mkdirSync(publicPath)
     }
+
+    const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
+    const params = {
+      title: getTitle(page.name),
+      content: content,
+      translations: translations,
+      basePath: langPath,
+    }
+    const renderedPage = renderTemplate(baseTemplate, params)
 
     fs.writeFileSync(`${publicPath}${page.name}`, renderedPage)
   })
