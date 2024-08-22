@@ -34,6 +34,7 @@ fs.readdirSync('pages', {withFileTypes: true})
 
     const content = fs.readFileSync(`pages/${page.name}`, 'utf8')
     const params = {
+      page: path.parse(page.name).name,
       title: getTitle(page.name),
       content: content,
       translations: translations,
