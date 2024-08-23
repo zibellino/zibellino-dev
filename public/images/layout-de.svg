@@ -128,7 +128,10 @@
     <tspan x="27.5" dy="-4">⇤</tspan>
     <tspan x="27.5" dy="6">⇥</tspan>
   </text>
-  <text x="47.5" y="117">Q</text>
+  <text x="47.5" y="117">
+    <tspan x="47.5" dy="-4">Q</tspan>
+    <tspan x="47.5" dy="6">@</tspan>
+  </text>
   <text x="67.5" y="112">W</text>
   <text x="87.5" y="112">E</text>
   <text x="107.5" y="117">R</text>
