@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const pages = ['index', 'music', 'keyboard', 'about']
+const pages = ['index', 'music', 'keyboard']
 const languages = ['en', 'it']
 
 const baseTemplate = fs.readFileSync('base.html', 'utf8')
