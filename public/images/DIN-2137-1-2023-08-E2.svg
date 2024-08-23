@@ -102,13 +102,15 @@
   <text x="257.5" y="79.5">F12</text>
 
   <text x="17.5" y="104.5">
-    <tspan x="17.5" dy="-4">°</tspan>
-    <tspan x="17.5" dy="6">^</tspan>
-    <tspan style="font-size:3" x="17.5" dy="5">|</tspan>
+    <tspan style="font-size:3" dx="-1" dy="-4">°</tspan>
+    <tspan x="16.5" dy="6">ˆ</tspan>
+    <tspan x="16.5" dy="0">◌</tspan>
+    <tspan style="font-size:3" x="20.5" dy="-1">|</tspan>
   </text>
   <text x="37.5" y="99.5">
-    <tspan x="37.5" dy="-4">!</tspan>
-    <tspan x="37.5" dy="6">1</tspan>
+    <tspan style="font-size:3" dx="-1" dy="-4">!</tspan>
+    <tspan x="36.5" dy="6">1</tspan>
+    <tspan style="font-size:3" x="40.5" dy="-1">’</tspan>
   </text>
   <text x="57.5" y="94.5">2</text>
   <text x="77.5" y="94.5">3</text>
