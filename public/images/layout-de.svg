@@ -105,7 +105,10 @@
     <tspan x="17.5" dy="-4">°</tspan>
     <tspan x="17.5" dy="6">^</tspan>
   </text>
-  <text x="37.5" y="99.5">1</text>
+  <text x="37.5" y="99.5">
+    <tspan x="37.5" dy="-4">!</tspan>
+    <tspan x="37.5" dy="6">1</tspan>
+  </text>
   <text x="57.5" y="94.5">2</text>
   <text x="77.5" y="94.5">3</text>
   <text x="97.5" y="94.5">4</text>
