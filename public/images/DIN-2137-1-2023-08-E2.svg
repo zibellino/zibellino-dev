@@ -112,7 +112,11 @@
     <tspan x="36.5" dy="6">1</tspan>
     <tspan style="font-size:3" x="40.5" dy="-1">’</tspan>
   </text>
-  <text x="57.5" y="94.5">2</text>
+  <text x="57.5" y="94.5">
+    <tspan style="font-size:3" dx="-1" dy="-4">"</tspan>
+    <tspan x="56.5" dy="6">2</tspan>
+    <tspan style="font-size:3" x="60.5" dy="-1"><</tspan>
+  </text>
   <text x="77.5" y="94.5">3</text>
   <text x="97.5" y="94.5">4</text>
   <text x="117.5" y="99.5">5</text>
