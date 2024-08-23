@@ -13,7 +13,7 @@ const renderTemplate = (template, params) => {
 
 pages.forEach(page => {
   languages.forEach(lang => {
-    import translations from `lang/${lang}.json`
+    const translations = JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))
     const publicPath = `public/${translations.path}`
     if (translations.path && !fs.existsSync(publicPath)) {
       fs.mkdirSync(publicPath)
