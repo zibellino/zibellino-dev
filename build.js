@@ -9,9 +9,7 @@ const renderTemplate = (template, params) => {
   return new Function(...names, `return \`${template}\``)(...vals)
 }
 
-fs.mkdirSync('public')
 fs.cpSync('images', 'public/images', {recursive: true})
-fs.cpSync('style', 'public/style', {recursive: true})
 
 fs.readdirSync('pages', {withFileTypes: true})
 .filter(page => !page.isDirectory())
