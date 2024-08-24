@@ -6,9 +6,7 @@ const languages = ['en', 'it']
 
 const baseTemplate = fs.readFileSync('base.html', 'utf8')
 const renderTemplate = (template, params) => {
-  const names = Object.keys(params)
-  const vals = Object.values(params)
-  return new Function(...names, `return \`${template}\``)(...vals)
+  return new Function('$', `return \`${template}\``)(params)
 }
 
 const includeSvg = (name) => {
@@ -26,9 +24,7 @@ pages.forEach(page => {
     const params = {
       page: page,
       lang: translations,
-      helpers: {
-        svg: includeSvg
-      }
+      svg: includeSvg
     }
 
     const content = fs.readFileSync(`pages/${page}.html`, 'utf8')
