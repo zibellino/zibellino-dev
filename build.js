@@ -11,6 +11,10 @@ const renderTemplate = (template, params) => {
   return new Function(...names, `return \`${template}\``)(...vals)
 }
 
+const includeSvg = (name) => {
+  return fs.readFileSync(`public/images/${name}.svg`)
+}
+
 pages.forEach(page => {
   languages.forEach(lang => {
     const translations = JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))
@@ -22,6 +26,9 @@ pages.forEach(page => {
     const params = {
       page: page,
       lang: translations,
+      helpers: {
+        svg: includeSvg
+      }
     }
 
     const content = fs.readFileSync(`pages/${page}.html`, 'utf8')
