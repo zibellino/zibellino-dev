@@ -25,7 +25,6 @@ pages.forEach(page => {
     $.page = page
     $.lang = lang
 
-    const renderedPage = 
     fs.writeFileSync(`${$.path(page)}.html`, $.html('base'))
   })
 })
