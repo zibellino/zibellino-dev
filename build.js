@@ -25,7 +25,7 @@ pages.forEach(page => {
     $.page = page
     $.lang = lang
 
-    fs.writeFileSync(`${$.path(page)}.html`, $.html('base'))
+    fs.writeFileSync(`${$.path(page)}.html`, $.content('base'))
   })
 })
 
