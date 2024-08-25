@@ -4,7 +4,7 @@ import path from 'path'
 const pages = ['index', 'music', 'keyboard']
 const languages = ['en', 'it']
 const $ = {
-  svg: (name) => fs.readFileSync(`public/images/${name}.svg`)
+  svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   content: () => new Function('$', `return \`${fs.readFileSync(`pages/${$.page}.html`, 'utf8')}\``)($)
 }
 
