@@ -2,11 +2,11 @@
 <html lang="${$.lang.code}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/style/main.css">
-<title>${$.lang.header[$.page]} | Zibellino's</title>
+<title>${$.title()} | Zibellino's</title>
 <header role="navigation">
-	<a href="${$.path('index')}">Zibellino</a>
-	<a href="${$.path('music')}">${$.lang.header.music}</a>
-	<a href="${$.path('keyboard')}">${$.lang.header.keyboard}</a>
+	<a href="${$.path('index')}">${$.title('index')}</a>
+	<a href="${$.path('music')}">${$.title('music')}</a>
+	<a href="${$.path('keyboard')}">${$.title('keyboard')}</a>
 </header>
 ${$.content()}
 <footer>
