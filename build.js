@@ -8,7 +8,6 @@ const $ = {
   content: (page) => new Function('$', `return \`${fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')}\``)($)
 }
 
-const baseTemplate = fs.readFileSync('base.html', 'utf8')
 const renderTemplate = (template, params) => {
   return new Function('$', `return \`${template}\``)(params)
 }
