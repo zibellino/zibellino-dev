@@ -5,7 +5,7 @@ const pages = ['index', 'music', 'keyboard']
 const languages = ['en', 'it']
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
-  content: () => new Function('$', `return \`${fs.readFileSync(`pages/${$.page}.html`, 'utf8')}\``)($)
+  content: (page) => new Function('$', `return \`${fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')}\``)($)
 }
 
 const baseTemplate = fs.readFileSync('base.html', 'utf8')
@@ -35,10 +35,7 @@ pages.forEach(page => {
     $.page = page
     $.lang = translations
 
-    const content = fs.readFileSync(`pages/${page}.html`, 'utf8')
-    params.content = renderTemplate(content, params)
-    
-    const renderedPage = renderTemplate(baseTemplate, params)
+    const renderedPage = $.content('base')
     fs.writeFileSync(`${publicPath}${page}.html`, renderedPage)
   })
 })
