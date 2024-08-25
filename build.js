@@ -17,7 +17,7 @@ const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   content: (page) => new Function('$', `return \`${fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')}\``)($),
   path: (page) => `/${$.lang !== 'en' ? `${$.lang}/` : ''}${page !== 'index' ? page : ''}`,
-  title: (page) => $.translations[$.lang].titles[page || $.page],
+  title: (page) => translations[$.lang].titles[page || $.page],
 }
 
 pages.forEach(page => {
