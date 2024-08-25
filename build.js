@@ -7,9 +7,9 @@ const translations = []
 
 languages.forEach(language => {
   translations[language] = JSON.parse(fs.readFileSync(`lang/${language}.json`, 'utf8'))
-  const publicPath = `public/${language}`
-  if (!fs.existsSync(publicPath)) {
-    fs.mkdirSync(publicPath)
+
+  if (language !== 'en') {
+    fs.mkdirSync(`public/${language}`)
   }
 })
 
