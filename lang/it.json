@@ -1,7 +1,8 @@
 {
   "code": "it",
   "path": "it/",
-  "header": {
+  "titles": {
+    "index": "Zibellino",
     "keyboard": "Tastiera",
     "music": "Musica"
   }
