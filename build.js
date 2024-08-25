@@ -6,8 +6,8 @@ const languages = ['en', 'it']
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   content: (page) => new Function('$', `return \`${fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')}\``)($),
-  path: (page) => `/${$.lang.code !== 'en' ? `${$.lang.code}/` : ''}${page !== 'index' ? page : ''}`
-  title: (page) => $.lang.titles[page || $.page]
+  path: (page) => `/${$.lang.code !== 'en' ? `${$.lang.code}/` : ''}${page !== 'index' ? page : ''}`,
+  title: (page) => $.lang.titles[page || $.page],
 }
 
 pages.forEach(page => {
