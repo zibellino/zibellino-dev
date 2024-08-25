@@ -5,7 +5,8 @@ const pages = ['index', 'music', 'keyboard']
 const languages = ['en', 'it']
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
-  html: (page) => new Function('$', `return \`${fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')}\``)($)
+  html: (page) => new Function('$', `return \`${fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')}\``)($),
+  path: (page) => `/${$.lang.path}${(page || $.page) !== 'index' ? (page || $.page) : ''}`
 }
 
 pages.forEach(page => {
