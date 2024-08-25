@@ -3,6 +3,10 @@ import path from 'path'
 
 const pages = ['index', 'music', 'keyboard']
 const languages = ['en', 'it']
+const $ = {
+  svg: (name) => fs.readFileSync(`public/images/${name}.svg`)
+  content: () => new Function('$', `return \`${fs.readFileSync(`pages/${$.page}.html`, 'utf8')}\``)($)
+}
 
 const baseTemplate = fs.readFileSync('base.html', 'utf8')
 const renderTemplate = (template, params) => {
@@ -24,8 +28,12 @@ pages.forEach(page => {
     const params = {
       page: page,
       lang: translations,
-      svg: includeSvg
+      svg: includeSvg,
+      $: $
     }
+    
+    $.page = page
+    $.lang = translations
 
     const content = fs.readFileSync(`pages/${page}.html`, 'utf8')
     params.content = renderTemplate(content, params)
