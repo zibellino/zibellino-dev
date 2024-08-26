@@ -9,8 +9,8 @@
 	<a href="${$.path('keyboard')}">${$.title('keyboard')}</a>
 	<button onclick="this.nextElementSibling.toggleAttribute('open')">🌐</button>
 	<dialog>
-		<a href="/">EN</a>
-		<a href="/it/">IT</a>
+		<a href="${$.path(null, 'en')}">EN</a>
+		<a href="${$.path(null, 'it')}">IT</a>
 	</dialog>
 </header>
 ${$.content()}
