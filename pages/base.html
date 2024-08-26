@@ -5,14 +5,8 @@
 <title>${$.title()} | Zibellino's</title>
 <header role="navigation">
 	${$.pageLinks()}
-	<a rel="author" href="${$.path('index')}">${$.title('index')}</a>
-	<a href="${$.path('music')}">${$.title('music')}</a>
-	<a href="${$.path('keyboard')}">${$.title('keyboard')}</a>
 	<button onclick="this.nextElementSibling.toggleAttribute('open')">🌐</button>
-	<dialog>
-		<a rel="alternate" hreflang="en" href="${$.path(null, 'en')}">EN</a>
-		<a rel="alternate" hreflang="it" href="${$.path(null, 'it')}">IT</a>
-	</dialog>
+	<dialog>${$.langLinks()}</dialog>
 </header>
 ${$.content()}
 <footer>
