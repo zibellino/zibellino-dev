@@ -27,7 +27,7 @@ const $ = {
     lang = lang || $.lang
     lang = lang !== 'en' ? lang : ''
 
-    `/${[lang, page].filter(Boolean).join('/')}`
+    return `/${[lang, page].filter(Boolean).join('/')}`
   },
 }
 
