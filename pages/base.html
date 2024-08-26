@@ -4,18 +4,18 @@
 <link rel="stylesheet" href="/style/main.css">
 <title>${$.title()} | Zibellino's</title>
 <header role="navigation">
-	<a href="${$.path('index')}">${$.title('index')}</a>
+	<a rel="author" href="${$.path('index')}">${$.title('index')}</a>
 	<a href="${$.path('music')}">${$.title('music')}</a>
 	<a href="${$.path('keyboard')}">${$.title('keyboard')}</a>
 	<button onclick="this.nextElementSibling.toggleAttribute('open')">🌐</button>
 	<dialog>
-		<a href="${$.path(null, 'en')}">EN</a>
-		<a href="${$.path(null, 'it')}">IT</a>
+		<a rel="alternate" hreflang="en" href="${$.path(null, 'en')}">EN</a>
+		<a rel="alternate" hreflang="it" href="${$.path(null, 'it')}">IT</a>
 	</dialog>
 </header>
 ${$.content()}
 <footer>
-	<a href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC" src="/images/cc-by-nc.png"></a>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC" src="/images/cc-by-nc.png"></a>
 	<a href="http://www.konomark.org/"><img alt="Konomark" src="/images/konomark.png"></a>
 	<a href="http://www.kopimi.com/"><img alt="Kopimi" src="/images/kopimi.png"></a>
 </footer>
