@@ -15,9 +15,20 @@ languages.forEach(language => {
 
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
-  content: (page) => new Function('$', `return \`${fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')}\``)($),
-  path: (page) => `/${$.lang !== 'en' ? `${$.lang}/` : ''}${page !== 'index' ? page : ''}`,
   title: (page) => translations[$.lang].titles[page || $.page],
+  content: (page) => {
+    const content = fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')
+    return new Function('$', `return \`${content}\``)($)
+  },
+  path: (page, lang) => {
+    page = page || $.page
+    page = page !== 'index' ? page : ''
+
+    lang = lang || $.lang
+    lang = lang !== 'en' ? lang : ''
+
+    `/${[lang, page].filter(Boolean).join('/')}`
+  },
 }
 
 pages.forEach(page => {
