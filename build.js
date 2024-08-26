@@ -14,13 +14,11 @@ languages.forEach(language => {
 })
 
 const $ = {
-  pages: pages,
-  langs: languages,
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   title: (page) => translations[$.lang].titles[page || $.page],
-  content: (page) => {
+  content: (page, params) => {
     const content = fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')
-    return new Function('$', `return \`${content}\``)($)
+    return new Function('$', `return \`${content}\``)(params || $)
   },
   path: (page, lang) => {
     page = page || $.page
@@ -31,6 +29,25 @@ const $ = {
 
     return `/${[lang, page].filter(Boolean).join('/')}`
   },
+  pageLinks: () => pages.map(page => {
+    const params = {
+      path: $.path(page),
+      title: $.title(page),
+      rel: page === 'index' ? 'author' : '',
+    }
+
+    return $.content('anchor', params)
+  }),
+  langLinks: () => languages.map(lang => {
+    const params = {
+      path: $.path(null, lang),
+      title: lang.toUpperCase(),
+      rel: 'alternate',
+      hreflang: lang,
+    }
+
+    return $.content('anchor', params)
+  }),
 }
 
 pages.forEach(page => {
