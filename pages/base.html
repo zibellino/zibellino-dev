@@ -7,6 +7,11 @@
 	<a href="${$.path('index')}">${$.title('index')}</a>
 	<a href="${$.path('music')}">${$.title('music')}</a>
 	<a href="${$.path('keyboard')}">${$.title('keyboard')}</a>
+	<button onclick="this.nextElementSibling.toggleAttribute('open')">lang</button>
+	<dialog>
+		<a href="/">EN</a>
+		<a href="/it/">IT</a>
+	</dialog>
 </header>
 ${$.content()}
 <footer>
