@@ -13,7 +13,7 @@ languages.forEach(language => {
   }
 })
 
-const path = (page, lang) => {
+const href = (page, lang) => {
   page = page !== 'index' ? page : ''
   lang = lang !== 'en' ? lang : ''
 
@@ -29,7 +29,7 @@ const $ = {
   },
   pageLinks: () => pages.map(page => {
     const params = {
-      path: path(page, $.lang),
+      href: href(page, $.lang),
       text: $.title(page),
       rel: page === 'index' ? 'author' : '',
     }
@@ -38,7 +38,7 @@ const $ = {
   }).join(''),
   langLinks: () => languages.map(lang => {
     const params = {
-      path: path($.page, lang),
+      href: href($.page, lang),
       text: lang.toUpperCase(),
       rel: 'alternate',
       hreflang: lang,
