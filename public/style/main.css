@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji');
 
 * {
 	margin: 0;
@@ -51,6 +52,10 @@ body > header {
 	color: snow;
 	letter-spacing: 2px;
 	filter: drop-shadow(gray 0 1px 4px);
+}
+
+body > header button {
+	font-family: "Noto Emoji";
 }
 
 main,
