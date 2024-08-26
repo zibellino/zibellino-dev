@@ -14,6 +14,8 @@ languages.forEach(language => {
 })
 
 const $ = {
+  pages: pages,
+  langs: languages,
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   title: (page) => translations[$.lang].titles[page || $.page],
   content: (page) => {
