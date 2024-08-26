@@ -32,7 +32,7 @@ const $ = {
   pageLinks: () => pages.map(page => {
     const params = {
       path: $.path(page),
-      title: $.title(page),
+      text: $.title(page),
       rel: page === 'index' ? 'author' : '',
     }
 
@@ -41,7 +41,7 @@ const $ = {
   langLinks: () => languages.map(lang => {
     const params = {
       path: $.path(null, lang),
-      title: lang.toUpperCase(),
+      text: lang.toUpperCase(),
       rel: 'alternate',
       hreflang: lang,
     }
