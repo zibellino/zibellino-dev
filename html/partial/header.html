@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="${$.lang}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/style/main.css">
+<title>${$.title()} | Zibellino's</title>
+<header role="navigation">
+	${$.pageLinks()}
+	<button onclick="this.nextElementSibling.toggleAttribute('open')">🌐</button>
+	<dialog>${$.langLinks()}</dialog>
+</header>
