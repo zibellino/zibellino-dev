@@ -23,21 +23,9 @@ const href = (page, lang) => {
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   title: (page) => translations[$.lang].titles[page || $.page],
-  content: (page, params) => {
-    const content = fs.readFileSync(`html/${page || $.page}.html`, 'utf8')
-    return new Function('$', `return \`${content}\``)(params || $)
-  },
   html: (partial, params) => {
     const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : $.page}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
-  },
-  header: () => {
-    const content = fs.readFileSync(`html/header.html`, 'utf8')
-    return new Function('$', `return \`${content}\``)($)
-  },
-  footer: () => {
-    const content = fs.readFileSync(`html/footer.html`, 'utf8')
-    return new Function('$', `return \`${content}\``)($)
   },
   pageLinks: () => pages.map(page => {
     const params = {
