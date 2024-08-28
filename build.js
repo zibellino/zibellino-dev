@@ -24,8 +24,20 @@ const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   title: (page) => translations[$.lang].titles[page || $.page],
   content: (page, params) => {
-    const content = fs.readFileSync(`pages/${page || $.page}.html`, 'utf8')
+    const content = fs.readFileSync(`html/${page || $.page}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
+  },
+  html: (partial, params) => {
+    const content = fs.readFileSync(`html/partial/${partial}.html`, 'utf8')
+    return new Function('$', `return \`${content}\``)(params || $)
+  },
+  header: () => {
+    const content = fs.readFileSync(`html/header.html`, 'utf8')
+    return new Function('$', `return \`${content}\``)($)
+  },
+  footer: () => {
+    const content = fs.readFileSync(`html/footer.html`, 'utf8')
+    return new Function('$', `return \`${content}\``)($)
   },
   pageLinks: () => pages.map(page => {
     const params = {
@@ -34,7 +46,7 @@ const $ = {
       rel: page === 'index' ? 'author' : '',
     }
 
-    return $.content('anchor', params)
+    return $.html('anchor', params)
   }).join(''),
   langLinks: () => languages.map(lang => {
     const params = {
@@ -44,7 +56,7 @@ const $ = {
       hreflang: lang,
     }
 
-    return $.content('anchor', params)
+    return $.html('anchor', params)
   }).join(''),
 }
 
