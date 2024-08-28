@@ -27,10 +27,7 @@ const $ = {
     const content = fs.readFileSync(`html/${page || $.page}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
   },
-  html: (partial, params) => {
-    const content = fs.readFileSync(`html/partial/${partial}.html`, 'utf8')
-    return new Function('$', `return \`${content}\``)(params || $)
-  },
+  html: (partial, params) => fs.readFileSync(`html/partial/${partial}.html`, 'utf8'),
   header: () => {
     const content = fs.readFileSync(`html/header.html`, 'utf8')
     return new Function('$', `return \`${content}\``)($)
