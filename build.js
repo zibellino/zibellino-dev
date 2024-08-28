@@ -65,7 +65,7 @@ pages.forEach(page => {
     $.page = page
     $.lang = lang
 
-    fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}${page}.html`, $.content('base'))
+    fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}${page}.html`, $.content(page))
   })
 })
 
