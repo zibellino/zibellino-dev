@@ -86,126 +86,126 @@
   <use id="down" xlink:href="#button" x="310" y="115" />
   <use id="right" xlink:href="#button" x="330" y="115" />
 
-  <circle cx="16.5" cy="80.5" r=".5" />
-  <path d="M 15.5 82.25 v .5 h 1.5 v -.75 l .5 1 l -1 .75 v 1.75 h .5 v -1.5 l 1 -.75 v 1.5 h 1.75 v -.5 h -1.25 v -1.25 l -1 -1.75 h .65 l .6 1 l 0.4 -0.25 l -.75 -1.25 h -1.15 c -0.25 .5 -.5 .5 -.75 .5 v 1 z"/>
-  <text x="37.5" y="79.5">F1</text>
-  <text x="57.5" y="74.5">F2</text>
-  <text x="77.5" y="74.5">F3</text>
-  <text x="97.5" y="74.5">F4</text>
-  <text x="117.5" y="79.5">F5</text>
-  <text x="137.5" y="84.5">F6</text>
-  <text x="157.5" y="84.5">F7</text>
-  <text x="177.5" y="79.5">F8</text>
-  <text x="197.5" y="74.5">F9</text>
-  <text x="217.5" y="74.5">F10</text>
-  <text x="237.5" y="74.5">F11</text>
-  <text x="257.5" y="79.5">F12</text>
+  <circle cx="16.5" cy="30.5" r=".5" />
+  <path d="M 15.5 32.25 v .5 h 1.5 v -.75 l .5 1 l -1 .75 v 1.75 h .5 v -1.5 l 1 -.75 v 1.5 h 1.75 v -.5 h -1.25 v -1.25 l -1 -1.75 h .65 l .6 1 l 0.4 -0.25 l -.75 -1.25 h -1.15 c -0.25 .5 -.5 .5 -.75 .5 v 1 z"/>
+  <text x="37.5" y="29.5">F1</text>
+  <text x="57.5" y="24.5">F2</text>
+  <text x="77.5" y="24.5">F3</text>
+  <text x="97.5" y="24.5">F4</text>
+  <text x="117.5" y="29.5">F5</text>
+  <text x="137.5" y="34.5">F6</text>
+  <text x="157.5" y="34.5">F7</text>
+  <text x="177.5" y="29.5">F8</text>
+  <text x="197.5" y="24.5">F9</text>
+  <text x="217.5" y="24.5">F10</text>
+  <text x="237.5" y="24.5">F11</text>
+  <text x="257.5" y="29.5">F12</text>
 
-  <text x="17.5" y="104.5">
+  <text x="17.5" y="54.5">
     <tspan style="font-size:3" dx="-1" dy="-4">°</tspan>
     <tspan x="16.5" dy="6">ˆ</tspan>
     <tspan x="16.5" dy="0" style="stroke: gray">◌</tspan>
     <tspan style="font-size:3" x="20.5" dy="-1">|</tspan>
   </text>
-  <text x="37.5" y="99.5">
+  <text x="37.5" y="49.5">
     <tspan style="font-size:3" dx="-1" dy="-4">!</tspan>
     <tspan x="36.5" dy="6">1</tspan>
     <tspan style="font-size:3" x="40.5" dy="-1">’</tspan>
   </text>
-  <text x="57.5" y="94.5">
+  <text x="57.5" y="44.5">
     <tspan style="font-size:3" dx="-1" dy="-4">"</tspan>
     <tspan x="56.5" dy="6">2</tspan>
     <tspan style="font-size:3" x="60.5" dy="-1"><</tspan>
   </text>
-  <text x="77.5" y="94.5">3</text>
-  <text x="97.5" y="94.5">4</text>
-  <text x="117.5" y="99.5">5</text>
-  <text x="137.5" y="104.5">6</text>
-  <text x="157.5" y="104.5">7</text>
-  <text x="177.5" y="99.5">8</text>
-  <text x="197.5" y="94.5">9</text>
-  <text x="217.5" y="94.5">0</text>
-  <text x="237.5" y="94.5">
+  <text x="77.5" y="44.5">3</text>
+  <text x="97.5" y="44.5">4</text>
+  <text x="117.5" y="49.5">5</text>
+  <text x="137.5" y="54.5">6</text>
+  <text x="157.5" y="54.5">7</text>
+  <text x="177.5" y="49.5">8</text>
+  <text x="197.5" y="44.5">9</text>
+  <text x="217.5" y="44.5">0</text>
+  <text x="237.5" y="44.5">
     <tspan x="237.5" dy="-4">?</tspan>
     <tspan x="237.5" dy="6">ß</tspan>
   </text>
-  <text x="257.5" y="99.5">
+  <text x="257.5" y="49.5">
     <tspan x="257.5" dy="-4">`</tspan>
     <tspan x="257.5" dy="6">´</tspan>
   </text>
 
-  <text x="27.5" y="122">
+  <text x="27.5" y="72">
     <tspan x="27.5" dy="-4">⇤</tspan>
     <tspan x="27.5" dy="6">⇥</tspan>
   </text>
-  <text x="47.5" y="117">
+  <text x="47.5" y="67">
     <tspan x="46.5" dy="-2">Q</tspan>
     <tspan style="font-size:3" x="50.5" dy="5">@</tspan>
   </text>
-  <text x="67.5" y="112">W</text>
-  <text x="87.5" y="112">E</text>
-  <text x="107.5" y="117">R</text>
-  <text x="127.5" y="122">T</text>
-  <text x="147.5" y="122">Z</text>
-  <text x="167.5" y="122">U</text>
-  <text x="187.5" y="117">I</text>
-  <text x="207.5" y="112">O</text>
-  <text x="227.5" y="112">P</text>
-  <text x="247.5" y="117">Ü</text>
-  <text x="267.5" y="117">
+  <text x="67.5" y="62">W</text>
+  <text x="87.5" y="62">E</text>
+  <text x="107.5" y="67">R</text>
+  <text x="127.5" y="72">T</text>
+  <text x="147.5" y="72">Z</text>
+  <text x="167.5" y="72">U</text>
+  <text x="187.5" y="67">I</text>
+  <text x="207.5" y="62">O</text>
+  <text x="227.5" y="62">P</text>
+  <text x="247.5" y="67">Ü</text>
+  <text x="267.5" y="67">
     <tspan x="267.5" dy="-4">*</tspan>
     <tspan x="267.5" dy="6">+</tspan>
   </text>
 
-  <text x="37.5" y="139.5">⇪</text>
-  <text x="57.5" y="134.5">A</text>
-  <text x="77.5" y="129.5">S</text>
-  <text x="97.5" y="134.5">D</text>
-  <text x="117.5" y="139.5">F</text>
-  <text x="137.5" y="139.5">G</text>
-  <text x="157.5" y="139.5">H</text>
-  <text x="177.5" y="139.5">J</text>
-  <text x="197.5" y="134.5">K</text>
-  <text x="217.5" y="129.5">L</text>
-  <text x="237.5" y="134.5">Ö</text>
-  <text x="257.5" y="134.5">Ä</text>
-  <text x="277.5" y="134.5">
+  <text x="37.5" y="89.5">⇪</text>
+  <text x="57.5" y="84.5">A</text>
+  <text x="77.5" y="79.5">S</text>
+  <text x="97.5" y="84.5">D</text>
+  <text x="117.5" y="89.5">F</text>
+  <text x="137.5" y="89.5">G</text>
+  <text x="157.5" y="89.5">H</text>
+  <text x="177.5" y="89.5">J</text>
+  <text x="197.5" y="84.5">K</text>
+  <text x="217.5" y="79.5">L</text>
+  <text x="237.5" y="84.5">Ö</text>
+  <text x="257.5" y="84.5">Ä</text>
+  <text x="277.5" y="84.5">
     <tspan x="277.5" dy="-4">'</tspan>
     <tspan x="277.5" dy="6">#</tspan>
   </text>
 
-  <text x="47.5" y="157">⇧</text>
-  <text x="67.5" y="152">Y</text>
-  <text x="87.5" y="152">X</text>
-  <text x="107.5" y="157">C</text>
-  <text x="127.5" y="157">V</text>
-  <text x="147.5" y="157">B</text>
-  <text x="167.5" y="157">N</text>
-  <text x="187.5" y="157">M</text>
-  <text x="207.5" y="152">
+  <text x="47.5" y="107">⇧</text>
+  <text x="67.5" y="102">Y</text>
+  <text x="87.5" y="102">X</text>
+  <text x="107.5" y="107">C</text>
+  <text x="127.5" y="107">V</text>
+  <text x="147.5" y="107">B</text>
+  <text x="167.5" y="107">N</text>
+  <text x="187.5" y="107">M</text>
+  <text x="207.5" y="102">
     <tspan x="207.5" dy="-4">&lt;</tspan>
     <tspan x="207.5" dy="6">&gt;</tspan>
   </text>
-  <text x="227.5" y="152">
+  <text x="227.5" y="102">
     <tspan x="227.5" dy="-4">;</tspan>
     <tspan x="227.5" dy="6">,</tspan>
   </text>
-  <text x="247.5" y="152">
+  <text x="247.5" y="102">
     <tspan x="247.5" dy="-4">:</tspan>
     <tspan x="247.5" dy="6">.</tspan>
   </text>
-  <text x="267.5" y="152">
+  <text x="267.5" y="102">
     <tspan x="267.5" dy="-4">_</tspan>
     <tspan x="267.5" dy="6">-</tspan>
   </text>
 
-  <text x="62.5" y="172">⎈</text>
-  <text x="82.5" y="172">⊞</text>
-  <text x="-102.5" y="177" transform="scale(-1, 1)">⌥</text>
-  <text x="147.5" y="177">␣</text>
-  <text x="192.5" y="177">⌥</text>
-  <text x="212.5" y="172">≡</text>
-  <text x="232.5" y="172">⎈</text>
+  <text x="62.5" y="122">⎈</text>
+  <text x="82.5" y="122">⊞</text>
+  <text x="-102.5" y="127" transform="scale(-1, 1)">⌥</text>
+  <text x="147.5" y="127">␣</text>
+  <text x="192.5" y="127">⌥</text>
+  <text x="212.5" y="122">≡</text>
+  <text x="232.5" y="122">⎈</text>
 
-  <text x="252.5" y="172">⇱</text>
+  <text x="252.5" y="122">⇱</text>
 </svg>
