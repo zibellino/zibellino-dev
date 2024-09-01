@@ -193,7 +193,11 @@
     <tspan style="font-size:3" x="111.3" dy="5">˝</tspan>
     <tspan x="110.5" style="stroke: gray; font-size:3;">◌</tspan>
   </text>
-  <text x="127.5" y="72">T</text>
+  <text x="127.5" y="72">
+    <tspan x="126.5" dy="-2">T</tspan>
+    <tspan style="font-size:3" x="132" dy="5"> ̌</tspan>
+    <tspan x="130.5" style="stroke: gray; font-size:3;">◌</tspan>
+  </text>
   <text x="147.5" y="72">Z</text>
   <text x="167.5" y="72">U</text>
   <text x="187.5" y="67">I</text>
