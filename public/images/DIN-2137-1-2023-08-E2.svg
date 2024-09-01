@@ -104,7 +104,7 @@
   <text x="17.5" y="104.5">
     <tspan style="font-size:3" dx="-1" dy="-4">°</tspan>
     <tspan x="16.5" dy="6">ˆ</tspan>
-    <tspan x="16.5" dy="0">◌</tspan>
+    <tspan x="16.5" dy="0" style="stroke: gray">◌</tspan>
     <tspan style="font-size:3" x="20.5" dy="-1">|</tspan>
   </text>
   <text x="37.5" y="99.5">
