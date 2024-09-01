@@ -104,54 +104,71 @@
   <text x="17.5" y="54.5">
     <tspan style="font-size:3" x="16.5" dy="-4">°</tspan>
     <tspan x="16.5" dy="6">ˆ</tspan>
-    <tspan x="16.5" dy="0" style="stroke: gray">◌</tspan>
-    <tspan style="font-size:3" x="20.5" dy="-1">|</tspan>
+    <tspan x="16.5" style="stroke: gray">◌</tspan>
+    <tspan style="font-size:3" x="20.5" dy="-.5">|</tspan>
   </text>
   <text x="37.5" y="49.5">
     <tspan style="font-size:3" x="36.5" dy="-4">!</tspan>
     <tspan x="36.5" dy="6">1</tspan>
-    <tspan style="font-size:3" x="40.5" dy="-1">’</tspan>
+    <tspan style="font-size:3" x="40.5" dy="-.5">’</tspan>
   </text>
   <text x="57.5" y="44.5">
     <tspan style="font-size:3" x="56.5" dy="-4">"</tspan>
     <tspan x="56.5" dy="6">2</tspan>
-    <tspan style="font-size:3" x="60.5" dy="-1"><</tspan>
+    <tspan style="font-size:3" x="60.5" dy="-.5"><</tspan>
   </text>
   <text x="77.5" y="44.5">
     <tspan style="font-size:3" x="76.5" dy="-4">§</tspan>
     <tspan x="76.5" dy="6">3</tspan>
-    <tspan style="font-size:3" x="80.5" dy="-1">></tspan>
+    <tspan style="font-size:3" x="80.5" dy="-.5">></tspan>
   </text>
   <text x="97.5" y="44.5">
     <tspan style="font-size:3" x="96.5" dy="-4">$</tspan>
     <tspan x="96.5" dy="6">4</tspan>
-    <tspan style="font-size:3" x="100.5" dy="-1">—</tspan>
+    <tspan style="font-size:3" x="100.5" dy="-.5">—</tspan>
   </text>
   <text x=117.5" y="49.5">
     <tspan style="font-size:3" x="116.5" dy="-4">%</tspan>
     <tspan x="116.5" dy="6">5</tspan>
-    <tspan style="font-size:3" x="120.5" dy="-1">¡</tspan>
+    <tspan style="font-size:3" x="120.5" dy="-.5">¡</tspan>
   </text>
   <text x=137.5" y="54.5">
     <tspan style="font-size:3" x="136.5" dy="-4">&</tspan>
     <tspan x="136.5" dy="6">6</tspan>
-    <tspan style="font-size:3" x="140.5" dy="-1">¿</tspan>
+    <tspan style="font-size:3" x="140.5" dy="-.5">¿</tspan>
   </text>
   <text x=157.5" y="54.5">
     <tspan style="font-size:3" x="156.5" dy="-4">/</tspan>
     <tspan x="156.5" dy="6">7</tspan>
-    <tspan style="font-size:3" x="160.5" dy="-1">{</tspan>
+    <tspan style="font-size:3" x="160.5" dy="-.5">{</tspan>
   </text>
-  <text x="177.5" y="49.5">8</text>
-  <text x="197.5" y="44.5">9</text>
-  <text x="217.5" y="44.5">0</text>
-  <text x="237.5" y="44.5">
-    <tspan x="237.5" dy="-4">?</tspan>
-    <tspan x="237.5" dy="6">ß</tspan>
+  <text x=177.5" y="49.5">
+    <tspan style="font-size:3" x="176.5" dy="-4">(</tspan>
+    <tspan x="176.5" dy="6">8</tspan>
+    <tspan style="font-size:3" x="180.5" dy="-.5">[</tspan>
+  </text>
+  <text x=197.5" y="44.5">
+    <tspan style="font-size:3" x="196.5" dy="-4">)</tspan>
+    <tspan x="196.5" dy="6">9</tspan>
+    <tspan style="font-size:3" x="200.5" dy="-.5">]</tspan>
+  </text>
+  <text x=217.5" y="44.5">
+    <tspan style="font-size:3" x="216.5" dy="-4">=</tspan>
+    <tspan x="216.5" dy="6">0</tspan>
+    <tspan style="font-size:3" x="220.5" dy="-.5">}</tspan>
+  </text>
+  <text x=237.5" y="44.5">
+    <tspan style="font-size:3" x="236.5" dy="-4">?</tspan>
+    <tspan x="236.5" dy="6">ß</tspan>
+    <tspan style="font-size:3" x="240.5" dy="-.5">\</tspan>
   </text>
   <text x="257.5" y="49.5">
-    <tspan x="257.5" dy="-4">`</tspan>
-    <tspan x="257.5" dy="6">´</tspan>
+    <tspan style="font-size:3" x="256.5" dy="-4">`</tspan>
+    <tspan x="256.5" style="stroke: gray; font-size:3;">◌</tspan>
+    <tspan x="257" dy="6">´</tspan>
+    <tspan x="256.5" style="stroke: gray">◌</tspan>
+    <tspan style="font-size:3" x="261.2" dy="-.5">˙</tspan>
+    <tspan x="260.5" style="stroke: gray; font-size:3;">◌</tspan>
   </text>
 
   <text x="27.5" y="72">
