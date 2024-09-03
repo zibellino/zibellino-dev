@@ -104,7 +104,7 @@
   <text x="17.5" y="54.5">
     <tspan style="font-size:3" x="16.5" dy="-4">°</tspan>
     <tspan x="16.5" dy="6">ˆ</tspan>
-    <tspan x="16.5" style="stroke: gray">◌</tspan>
+    <tspan x="16.5" style="stroke: grayText">◌</tspan>
     <tspan style="font-size:3" x="20.5" dy="-.5">|</tspan>
   </text>
   <text x="37.5" y="49.5">
@@ -164,11 +164,11 @@
   </text>
   <text x="257.5" y="49.5">
     <tspan style="font-size:3" x="256.5" dy="-4">`</tspan>
-    <tspan x="256.5" style="stroke: gray; font-size:3;">◌</tspan>
+    <tspan x="256.5" style="stroke: grayText; font-size:3;">◌</tspan>
     <tspan x="257" dy="6">´</tspan>
-    <tspan x="256.5" style="stroke: gray">◌</tspan>
+    <tspan x="256.5" style="stroke: grayText">◌</tspan>
     <tspan style="font-size:3" x="261.2" dy="-.5">˙</tspan>
-    <tspan x="260.5" style="stroke: gray; font-size:3;">◌</tspan>
+    <tspan x="260.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
 
   <text x="27.5" y="72">
@@ -182,7 +182,7 @@
   <text x="67.5" y="62">
     <tspan x="66.5" dy="-2">W</tspan>
     <tspan style="font-size:3" x="71.2" dy="5">‾</tspan>
-    <tspan x="70.5" style="stroke: gray; font-size:3;">◌</tspan>
+    <tspan x="70.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
   <text x="87.5" y="62">
     <tspan x="86.5" dy="-2">E</tspan>
@@ -191,12 +191,12 @@
   <text x="107.5" y="67">
     <tspan x="106.5" dy="-2">R</tspan>
     <tspan style="font-size:3" x="111.3" dy="5">˝</tspan>
-    <tspan x="110.5" style="stroke: gray; font-size:3;">◌</tspan>
+    <tspan x="110.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
   <text x="127.5" y="72">
     <tspan x="126.5" dy="-2">T</tspan>
     <tspan style="font-size:3" x="132" dy="5"> ̌</tspan>
-    <tspan x="130.5" style="stroke: gray; font-size:3;">◌</tspan>
+    <tspan x="130.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
   <text x="147.5" y="72">Z</text>
   <text x="167.5" y="72">U</text>
