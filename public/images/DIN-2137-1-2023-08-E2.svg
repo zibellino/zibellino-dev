@@ -181,7 +181,7 @@
   </text>
   <text x="67.5" y="62">
     <tspan x="66.5" dy="-2">W</tspan>
-    <tspan style="font-size:3" x="71.2" dy="5">‾</tspan>
+    <tspan style="font-size:3" x="71.14" dy="5">‾</tspan>
     <tspan x="70.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
   <text x="87.5" y="62">
@@ -235,7 +235,10 @@
   </text>
 
   <text x="37.5" y="89.5">⇪</text>
-  <text x="57.5" y="84.5">A</text>
+  <text x="57.5" y="84.5">
+    <tspan x="56.5" dy="-2">A</tspan>
+    <tspan style="font-size:2.5" x="61" dy="5">☺</tspan>
+  </text>
   <text x="77.5" y="79.5">S</text>
   <text x="97.5" y="84.5">D</text>
   <text x="117.5" y="89.5">F</text>
