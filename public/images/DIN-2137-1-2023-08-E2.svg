@@ -251,9 +251,20 @@
     <tspan x="116.5" dy="-2">F</tspan>
     <tspan x="121" dy="5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
-  <text x="137.5" y="89.5">G</text>
-  <text x="157.5" y="89.5">H</text>
-  <text x="177.5" y="89.5">J</text>
+  <text x="137.5" y="89.5">
+    <tspan x="136.5" dy="-2">G</tspan>
+    <tspan x="141" dy="5" style="font-size:3;">ẞ</tspan>
+  </text>
+  <text x="157.5" y="89.5">
+    <tspan x="156.5" dy="-2">H</tspan>
+    <tspan style="font-size:3" x="161.18" dy="5"> ̱</tspan>
+    <tspan x="160.5" style="stroke: grayText; font-size:3;">◌</tspan>
+  </text>
+  <text x="177.5" y="89.5">
+    <tspan x="176.5" dy="-2">J</tspan>
+    <tspan style="font-size:3" x="181.18" dy="5">̧</tspan>
+    <tspan x="180.5" style="stroke: grayText; font-size:3;">◌</tspan>
+  </text>
   <text x="197.5" y="84.5">K</text>
   <text x="217.5" y="79.5">L</text>
   <text x="237.5" y="84.5">Ö</text>
