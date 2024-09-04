@@ -237,7 +237,7 @@
   <text x="37.5" y="89.5">⇪</text>
   <text x="57.5" y="84.5">
     <tspan x="56.5" dy="-2">A</tspan>
-    <tspan style="font-size:2.5" x="61" dy="5">☻</tspan>
+    <tspan style="font-size:3" x="61" dy="5">☻</tspan>
   </text>
   <text x="77.5" y="79.5">
     <tspan x="76.5" dy="-2">S</tspan>
