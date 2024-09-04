@@ -213,12 +213,25 @@
     <tspan style="font-size:3" x="191.18" dy="5">˜</tspan>
     <tspan x="190.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
-  <text x="207.5" y="62">O</text>
-  <text x="227.5" y="62">P</text>
-  <text x="247.5" y="67">Ü</text>
+  <text x="207.5" y="62">
+    <tspan x="206.5" dy="-2">O</tspan>
+    <tspan style="font-size:3" x="211.18" dy="5">˚</tspan>
+    <tspan x="210.5" style="stroke: grayText; font-size:3;">◌</tspan>
+  </text>
+  <text x="227.5" y="62">
+    <tspan x="226.5" dy="-2">P</tspan>
+    <tspan style="font-size:3" x="232.1" dy="5"> ̉</tspan>
+    <tspan x="230.5" style="stroke: grayText; font-size:3;">◌</tspan>
+  </text>
+  <text x="247.5" y="67">
+    <tspan x="246.5" dy="-2">Ü</tspan>
+    <tspan style="font-size:3" x="252.1" dy="5"> ̓</tspan>
+    <tspan x="250.5" style="stroke: grayText; font-size:3;">◌</tspan>
+  </text>
   <text x="267.5" y="67">
-    <tspan x="267.5" dy="-4">*</tspan>
-    <tspan x="267.5" dy="6">+</tspan>
+    <tspan style="font-size:3" x="265.5" dy="-3">*</tspan>
+    <tspan x="265.5" dy="6">+</tspan>
+    <tspan style="font-size:3" x="270.5">~</tspan>
   </text>
 
   <text x="37.5" y="89.5">⇪</text>
