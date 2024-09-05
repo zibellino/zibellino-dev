@@ -265,7 +265,11 @@
     <tspan style="font-size:3" x="181.18" dy="5">̧</tspan>
     <tspan x="180.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
-  <text x="197.5" y="84.5">K</text>
+  <text x="197.5" y="84.5">
+    <tspan x="196.5" dy="-2">K</tspan>
+    <tspan style="font-size:3" x="201.18" dy="5">̦</tspan>
+    <tspan x="200.5" style="stroke: grayText; font-size:3;">◌</tspan>
+  </text>
   <text x="217.5" y="79.5">L</text>
   <text x="237.5" y="84.5">Ö</text>
   <text x="257.5" y="84.5">Ä</text>
