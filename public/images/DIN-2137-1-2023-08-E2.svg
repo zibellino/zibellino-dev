@@ -288,7 +288,7 @@
   <text x="277.5" y="84.5">
     <tspan style="font-size:3" x="276.5" dy="-4">'</tspan>
     <tspan x="276.5" dy="6">#</tspan>
-    <tspan style="font-size:3" x="280.5" dy="-.5"> ̶</tspan>
+    <tspan style="font-size:3" x="281" dy="-.5"> ̶</tspan>
   </text>
 
   <text x="47.5" y="107">⇧</text>
