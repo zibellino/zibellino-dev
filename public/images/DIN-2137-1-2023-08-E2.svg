@@ -280,10 +280,15 @@
     <tspan style="font-size:3" x="242.05" dy="5">̣</tspan>
     <tspan x="240.5" style="stroke: grayText; font-size:3;">◌</tspan>
   </text>
-  <text x="257.5" y="84.5">Ä</text>
+  <text x="257.5" y="84.5">
+    <tspan x="256.5" dy="-2">Ä</tspan>
+    <tspan style="font-size:3" x="261.15" dy="5">̶</tspan>
+    <tspan x="260.5" style="stroke: grayText; font-size:3;">◌</tspan>
+  </text>
   <text x="277.5" y="84.5">
-    <tspan x="277.5" dy="-4">'</tspan>
-    <tspan x="277.5" dy="6">#</tspan>
+    <tspan style="font-size:3" x="276.5" dy="-4">'</tspan>
+    <tspan x="276.5" dy="6">#</tspan>
+    <tspan style="font-size:3" x="280.5" dy="-.5"> ̶</tspan>
   </text>
 
   <text x="47.5" y="107">⇧</text>
