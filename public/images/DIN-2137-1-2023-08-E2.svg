@@ -292,7 +292,10 @@
   </text>
 
   <text x="47.5" y="107">⇧</text>
-  <text x="67.5" y="102">Y</text>
+  <text x="67.5" y="102">
+    <tspan x="66.5" dy="-2">Y</tspan>
+    <tspan style="font-size:3" x="70.5" dy="5">〉</tspan>
+  </text>
   <text x="87.5" y="102">X</text>
   <text x="107.5" y="107">C</text>
   <text x="127.5" y="107">V</text>
