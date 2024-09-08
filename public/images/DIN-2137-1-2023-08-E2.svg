@@ -304,8 +304,14 @@
     <tspan x="106.5" dy="-2">C</tspan>
     <tspan style="font-size:3" x="110.5" dy="5">⍽</tspan>
   </text>
-  <text x="127.5" y="107">V</text>
-  <text x="147.5" y="107">B</text>
+  <text x="127.5" y="107">
+    <tspan x="126.5" dy="-2">V</tspan>
+    <tspan style="font-size:3" x="130.5" dy="5">《</tspan>
+  </text>
+  <text x="147.5" y="107">
+    <tspan x="146.5" dy="-2">B</tspan>
+    <tspan style="font-size:3" x="150.5" dy="5">〈</tspan>
+  </text>
   <text x="167.5" y="107">N</text>
   <text x="187.5" y="107">M</text>
   <text x="207.5" y="102">
