@@ -316,7 +316,10 @@
     <tspan x="166.5" dy="-2">N</tspan>
     <tspan style="font-size:3" x="170.5" dy="5">–</tspan>
   </text>
-  <text x="187.5" y="107">M</text>
+  <text x="187.5" y="107">
+    <tspan x="186.5" dy="-2">M</tspan>
+    <tspan style="font-size:3" x="190.5" dy="5">μ</tspan>
+  </text>
   <text x="207.5" y="102">
     <tspan x="207.5" dy="-4">&lt;</tspan>
     <tspan x="207.5" dy="6">&gt;</tspan>
