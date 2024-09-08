@@ -312,7 +312,10 @@
     <tspan x="146.5" dy="-2">B</tspan>
     <tspan style="font-size:3" x="150.5" dy="5">〈</tspan>
   </text>
-  <text x="167.5" y="107">N</text>
+  <text x="167.5" y="107">
+    <tspan x="166.5" dy="-2">N</tspan>
+    <tspan style="font-size:3" x="170.5" dy="5">–</tspan>
+  </text>
   <text x="187.5" y="107">M</text>
   <text x="207.5" y="102">
     <tspan x="207.5" dy="-4">&lt;</tspan>
