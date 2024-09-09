@@ -324,7 +324,7 @@
     <tspan style="font-size:3" x="206.5" dy="-4">;</tspan>
     <tspan x="206.5" dy="6">,</tspan>
     <tspan x="211" style="stroke: grayText; font-size:3;">﹞</tspan>
-    <tspan dx="-2" style="font-size:3">‑</tspan>
+    <tspan dx="-2" style="font-size:3">-</tspan>
     <tspan dx="-2" style="stroke: grayText; font-size:3;">﹝</tspan>
   </text>
   <text x="227.5" y="102">
@@ -333,9 +333,11 @@
     <tspan style="font-size:3" x="230.5" dy="-.5">·</tspan>
   </text>
   <text x="247.5" y="102">
-    <tspan style="font-size:4" x="247.5" dy="-4">_</tspan>
+    <tspan style="font-size:4" x="247" dy="-4">_</tspan>
     <tspan x="246.5" dy="6">-</tspan>
-    <tspan style="font-size:3" x="250.5" dy="-.5">-</tspan>
+    <tspan x="251" dy="-1" style="stroke: grayText; font-size:3;">﹙</tspan>
+    <tspan dx="-2" style="font-size:3">-</tspan>
+    <tspan dx="-2" style="stroke: grayText; font-size:3;">﹚</tspan>
   </text>
 
   <text x="62.5" y="122">⎈</text>
