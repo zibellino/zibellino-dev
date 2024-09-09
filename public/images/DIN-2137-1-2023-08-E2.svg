@@ -321,20 +321,19 @@
     <tspan style="font-size:3" x="190.5" dy="5">μ</tspan>
   </text>
   <text x="207.5" y="102">
-    <tspan x="207.5" dy="-4">&lt;</tspan>
-    <tspan x="207.5" dy="6">&gt;</tspan>
+    <tspan style="font-size:3" x="207" dy="-4">;</tspan>
+    <tspan x="206.5" dy="6">,</tspan>
+    <tspan style="font-size:3" x="210.5" dy="-.5"></tspan>
   </text>
   <text x="227.5" y="102">
-    <tspan x="227.5" dy="-4">;</tspan>
-    <tspan x="227.5" dy="6">,</tspan>
+    <tspan style="font-size:3" x="226.5" dy="-4">:</tspan>
+    <tspan x="226.5" dy="6">.</tspan>
+    <tspan style="font-size:3" x="230.5" dy="-.5">·</tspan>
   </text>
   <text x="247.5" y="102">
-    <tspan x="247.5" dy="-4">:</tspan>
-    <tspan x="247.5" dy="6">.</tspan>
-  </text>
-  <text x="267.5" y="102">
-    <tspan x="267.5" dy="-4">_</tspan>
-    <tspan x="267.5" dy="6">-</tspan>
+    <tspan style="font-size:4" x="247.5" dy="-4">_</tspan>
+    <tspan x="246.5" dy="6">-</tspan>
+    <tspan style="font-size:3" x="250.5" dy="-.5"></tspan>
   </text>
 
   <text x="62.5" y="122">⎈</text>
