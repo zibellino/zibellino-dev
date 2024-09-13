@@ -71,7 +71,7 @@
   <use xlink:href="#button" x="225" y="90" />
   <use xlink:href="#button" x="245" y="90" />
   <use xlink:href="#button" x="265" y="90" />
-  <use xlink:href="#button" x="310" y="95" />
+  <use xlink:href="#button" x="290" y="95" />
 
   <use xlink:href="#button" x="60" y="110" />
   <use xlink:href="#button" x="80" y="110" />
@@ -81,10 +81,9 @@
   <use xlink:href="#button" x="210" y="110" />
   <use xlink:href="#button" x="230" y="110" />
   <use xlink:href="#button" x="250" y="110" />
-  <use xlink:href="#button" x="270" y="110" />
+  <use xlink:href="#button" x="270" y="115" />
   <use xlink:href="#button" x="290" y="115" />
   <use xlink:href="#button" x="310" y="115" />
-  <use xlink:href="#button" x="330" y="115" />
 
   <circle cx="16.5" cy="30.5" r=".5" />
   <path d="M 15.5 32.25 v .5 h 1.5 v -.75 l .5 1 l -1 .75 v 1.75 h .5 v -1.5 l 1 -.75 v 1.5 h 1.75 v -.5 h -1.25 v -1.25 l -1 -1.75 h .65 l .6 1 l 0.4 -0.25 l -.75 -1.25 h -1.15 c -0.25 .5 -.5 .5 -.75 .5 v 1 z"/>
