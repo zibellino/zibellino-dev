@@ -26,6 +26,7 @@ a:visited {
 
 iframe {
 	width: 100%;
+	border: 0;
 }
 
 body {
