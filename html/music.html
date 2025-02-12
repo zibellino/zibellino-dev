@@ -1,7 +1,18 @@
 ${$.html('header')}
 <style>
+  h1 {
+    width: 100%;
+  }
+
+  [role="main"] {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   article {
     margin: 1rem;
+    flex: 1;
+    min-width: calc(320px - 5rem);
   }
 </style>
 <section role="main">
