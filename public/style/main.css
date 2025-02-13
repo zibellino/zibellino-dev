@@ -4,66 +4,65 @@
 * {
   margin: 0;
   padding: 0;
-	border: 0;
-	box-sizing: border-box;
-	max-width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 svg {
-	color-scheme: dark;
+  color-scheme: dark;
 }
 
 a {
-	text-decoration: underline dotted dodgerblue .2em;
-	color: inherit;
-	display: inline-block;
-	padding: .5em;
+  text-decoration: underline dotted dodgerblue .2em;
+  color: inherit;
+  display: inline-block;
+  padding: .5em;
 }
 
 a:visited {
-	text-decoration-color: rebeccapurple;
+  text-decoration-color: rebeccapurple;
 }
 
 iframe {
-	width: 100%;
-	border: 0;
+  width: 100%;
 }
 
 body {
-	font-family: "Josefin Sans";
-	background: black;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	padding-top: 5em;
-	color: honeydew;
+  font-family: "Josefin Sans";
+  background: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 5em;
+  color: honeydew;
 }
 
 body > header {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	width: 100%;
-	padding-bottom: .5em;
-	background:
-		linear-gradient(0deg, transparent 1em, black 1em) top left / 100% 100%,
-		linear-gradient(45deg, transparent 50%, black 51%) bottom left / 1em 1em repeat-x,
-		linear-gradient(-45deg, transparent 50%, black 51%) bottom left / 1em 1em repeat-x;
-	font-weight: bold;
-	color: snow;
-	letter-spacing: 2px;
-	filter: drop-shadow(gray 0 1px 4px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  padding-bottom: .5em;
+  background:
+    linear-gradient(0deg, transparent 1em, black 1em) top left / 100% 100%,
+    linear-gradient(45deg, transparent 50%, black 51%) bottom left / 1em 1em repeat-x,
+    linear-gradient(-45deg, transparent 50%, black 51%) bottom left / 1em 1em repeat-x;
+  font-weight: bold;
+  color: snow;
+  letter-spacing: 2px;
+  filter: drop-shadow(gray 0 1px 4px);
 }
 
 body > header button {
-	font-family: "Noto Emoji";
+  font-family: "Noto Emoji";
 }
 
 h1 {
-	writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   text-orientation: upright;
   position: absolute;
   top: 1vh;
@@ -73,13 +72,13 @@ h1 {
 
 main,
 [role="main"]{
-	flex-grow: 1;
-	width: 100vh;
-	padding: 2rem 1rem;
-	margin: 0 auto;
-	z-index: 1;
+  flex-grow: 1;
+  width: 100vh;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 footer {
-	text-align: center;
+  text-align: center;
 }
