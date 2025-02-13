@@ -65,9 +65,9 @@ h1 {
   writing-mode: vertical-rl;
   text-orientation: upright;
   position: absolute;
-  top: 1vh;
+  top: 5vh;
   left: 0;
-  font-size: 1vh;
+  font-size: 5vh;
 }
 
 main,
