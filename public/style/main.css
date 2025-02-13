@@ -63,6 +63,7 @@ body > header button {
 }
 
 h1 {
+	writing-mode: vertical-rl;
   text-orientation: upright;
   position: absolute;
   top: 1vh;
