@@ -64,9 +64,10 @@ body > header button {
 h1 {
   writing-mode: vertical-rl;
   text-orientation: upright;
-  position: absolute;
+  text-transform: uppercase;
+  position: fixed;
   top: 5vh;
-  left: 0;
+  left: -1vh;
   font-size: 5vh;
 }
 
