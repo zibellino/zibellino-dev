@@ -73,8 +73,7 @@ h1 {
   writing-mode: vertical-lr;
 }
 
-main,
-[role="main"]{
+main {
   flex-grow: 1;
   width: 100vh;
   padding: 0 1rem 0 9vh;
