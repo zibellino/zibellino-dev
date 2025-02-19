@@ -63,7 +63,7 @@ body > header button {
 
 h1 {
   position: fixed;
-  top: 0;
+  top: 5rem;
   left: 0;
   line-height: 10vh;
   font-size: 10vh;
