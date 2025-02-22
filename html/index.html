@@ -2,35 +2,17 @@ ${$.html('header')}
 <style>
 	main img {
 		margin-bottom: 1rem;
-		float: left;
-		width: calc(35% - 2rem);
-		margin-right: 2rem;
 		mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M2 50 Q2 2 0 0 Q2 2 50 2 Q98 2 100 0 Q98 2 98 50 Q98 98 100 100 Q98 98 50 98 Q2 98 0 100 Q2 98 2 50 Z"/></svg>');
 	}
 
 	ul {
-		clear: both;
+		display: flex;
 		list-style: none;
-	}
-
-	ul,
-	[property="description"] {
-		margin-top: 1em;
-	}
-
-	[property="email"]::before {
-		content: attr(property) ": ";
-		text-transform: capitalize;
-	}
-
-	[property="sameAs"]::after {
-		content: ":\u00a0" attr(href);
 	}
 </style>
 <main vocab="http://schema.org" typeof="Person">
 	<img alt="Szabolcs" property="image" src="/images/szabolcs.jpg">
 	<h1 property="name">${$.title()}</h1>
-	<p property="description">Programmer. Maker. Artist.</p>
 	<ul>
 		<li><a href="mailto:szabolcs.pall@aol.com" property="email">szabolcs.pall@aol.com</a>
 		<li><a href="https://www.linkedin.com/in/szabolcspall/" property="sameAs">LinkedIn</a>
