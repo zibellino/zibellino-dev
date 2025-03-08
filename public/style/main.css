@@ -74,6 +74,7 @@ h1 {
 }
 
 main {
+  display: flex;
   flex-grow: 1;
   width: 100vh;
   padding: 0 1rem 0 9vh;
