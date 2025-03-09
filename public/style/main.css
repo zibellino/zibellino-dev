@@ -75,8 +75,9 @@ h1 {
 
 main {
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
-  width: 100vh;
+  width: max(100vw, 150vh);
   padding: 0 1rem 0 9vh;
   margin: 0 auto;
   z-index: 1;
