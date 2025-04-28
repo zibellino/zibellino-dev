@@ -75,13 +75,21 @@ h1 {
 
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   flex-grow: 1;
   align-items: start;
   width: max(100dvw, 150dvh);
   padding: 0 1rem 0 9dvh;
   margin: 0 auto;
   z-index: 1;
+}
+
+main > *:nth-child(2n+1) {
+  order: 1;
+}
+
+main > *:nth-child(2n) {
+  order: 2;
 }
 
 footer {
