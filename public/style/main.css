@@ -84,11 +84,15 @@ main {
   z-index: 1;
 }
 
-main > *:nth-child(2n+1) {
-  order: 1;
+main > *:not(h1) {
+  width: max(50dvw, 75dvh);
 }
 
 main > *:nth-child(2n) {
+  order: 1;
+}
+
+main > *:nth-child(2n+1) {
   order: 2;
 }
 
