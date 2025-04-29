@@ -85,7 +85,7 @@ main {
 }
 
 main > *:not(h1) {
-  width: max(50dvw, 75dvh);
+  width: 50%;
 }
 
 main > *:nth-child(2n) {
