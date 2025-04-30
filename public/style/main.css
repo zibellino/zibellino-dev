@@ -78,14 +78,14 @@ main {
   flex-flow: column wrap;
   flex-grow: 1;
   align-items: start;
-  width: max(100dvw, 150dvh);
+  width: min(100dvw, 150dvh);
   padding: 0 1rem 0 9dvh;
   margin: 0 auto;
   z-index: 1;
 }
 
 main > *:not(h1) {
-  width: 50%;
+  width: min(50cqw, 75cqh);
 }
 
 main > *:nth-child(2n) {
