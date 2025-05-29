@@ -62,9 +62,7 @@ body > header button {
 }
 
 h1 {
-  position: fixed;
-  top: 5rem;
-  left: 0;
+  justify-self: start;
   line-height: 10dvh;
   font-size: 10dvh;
   margin-left: -2dvh;
@@ -75,25 +73,7 @@ h1 {
 
 main {
   display: flex;
-  flex-flow: column wrap;
-  flex-grow: 1;
-  align-items: start;
-  width: min(100dvw, 150dvh);
-  padding: 0 1rem 0 9dvh;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-main > *:not(h1) {
-  min-width: 50dvmin;
-}
-
-main > *:nth-child(2n) {
-  order: 1;
-}
-
-main > *:nth-child(2n+1) {
-  order: 2;
+  flex-wrap: wrap;
 }
 
 footer {
