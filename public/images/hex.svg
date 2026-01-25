@@ -14,7 +14,7 @@
   <path d="M 10 21 l 6 0 l 3 5 l -6 0 z"/>
   <path d="M 13 10 l 6 0 l -3 5 l -6 0 z"/>
 </g>
-<g stroke="#0f0" fill="#0f06" stroke-width="0.1" transform="rotate(90, 24, 29) translate(11,-11)">
+<g stroke="#0f0" fill="#0f06" stroke-width="0.1" transform="rotate(30, 24, 29) translate(0,0)">
   <path d="M 24 13 l 3 5 l -3 5 l -3 -5 z"/>
   <path d="M 29 10 l 6 0 l 3 5 l -6 0 z"/>
   <path d="M 32 21 l 6 0 l -3 5 l -6 0 z"/>
