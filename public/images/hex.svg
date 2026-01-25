@@ -2,20 +2,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="150mm" viewBox="0 0 150 150">
 <g>
   <path d="M 24 13 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 29 10 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
   <path d="M 32 21 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
   <path d="M 43 24 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
   <path d="M 29 32 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 32 43 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
   <path d="M 24 35 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 10 43 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
   <path d="M 13 32 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
   <path d="M 5 24 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
   <path d="M 10 21 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 13 10 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
 </g>
 <g transform="rotate(90, 24, 29) translate(11,-11)">
-  <path d="M 24 13 l 3 5 l -3 5 l -3 -5 z" stroke="#0f0" fill="#0f06" stroke-width="0.1"/>
-  <path d="M 32 21 l 6 0 l -3 5 l -6 0 z" stroke="#0f0" fill="#0f06" stroke-width="0.1"/>
-  <path d="M 29 32 l 6 0 l 3 5 l -6 0 z" stroke="#0f0" fill="#0f06" stroke-width="0.1"/>
-  <path d="M 24 35 l 3 5 l -3 5 l -3 -5 z" stroke="#0f0" fill="#0f06" stroke-width="0.1"/>
-  <path d="M 13 32 l 6 0 l -3 5 l -6 0 z" stroke="#0f0" fill="#0f06" stroke-width="0.1"/>
-  <path d="M 10 21 l 6 0 l 3 5 l -6 0 z" stroke="#0f0" fill="#0f06" stroke-width="0.1"/>
+  <path d="M 24 13 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 29 10 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 32 21 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 43 24 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 29 32 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 32 43 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 24 35 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 10 43 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 13 32 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 5 24 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 10 21 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 13 10 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
 </g>
 </svg>
