@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="150mm" height="150mm" viewBox="0 0 150 150">
-<path d="M 2 1 L 4 1 L 3 2.5 L 1 2.5 Z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
-<path d="M 1 1 L 3 1 L 4 2.5 L 2 2.5 Z" stroke="#00f" fill="#00f6" stroke-width="0.1"/>
+  <path d="M 24 13 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 32 21 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 29 32 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 24 35 l 3 5 l -3 5 l -3 -5 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 13 32 l 6 0 l -3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
+  <path d="M 10 21 l 6 0 l 3 5 l -6 0 z" stroke="#f00" fill="#f006" stroke-width="0.1"/>
 </svg>
