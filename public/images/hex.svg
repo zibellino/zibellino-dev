@@ -14,18 +14,18 @@
   <path d="M 12 20 l 6 0 l 3 5 l -6 0 z"/>
   <path d="M 15 11 l 6 0 l -3 5 l -6 0 z"/>
 </g>
-<g stroke="#0f0" fill="#0f06" stroke-width="0.1" transform="rotate(30, 24, 29) translate(0,0)">
+<g stroke="#0f0" fill="#0f06" stroke-width="0.1" transform="rotate(30, 24, 27) translate(0,0)">
   <path d="M 24 13 l 3 5 l -3 5 l -3 -5 z"/>
-  <path d="M 29 10 l 6 0 l 3 5 l -6 0 z"/>
-  <path d="M 32 21 l 6 0 l -3 5 l -6 0 z"/>
-  <path d="M 43 24 l 3 5 l -3 5 l -3 -5 z"/>
-  <path d="M 29 32 l 6 0 l 3 5 l -6 0 z"/>
-  <path d="M 32 43 l 6 0 l -3 5 l -6 0 z"/>
-  <path d="M 24 35 l 3 5 l -3 5 l -3 -5 z"/>
-  <path d="M 10 43 l 6 0 l 3 5 l -6 0 z"/>
-  <path d="M 13 32 l 6 0 l -3 5 l -6 0 z"/>
-  <path d="M 5 24 l 3 5 l -3 5 l -3 -5 z"/>
-  <path d="M 10 21 l 6 0 l 3 5 l -6 0 z"/>
-  <path d="M 13 10 l 6 0 l -3 5 l -6 0 z"/>
+  <path d="M 27 11 l 6 0 l 3 5 l -6 0 z"/>
+  <path d="M 30 20 l 6 0 l -3 5 l -6 0 z"/>
+  <path d="M 39 22 l 3 5 l -3 5 l -3 -5 z"/>
+  <path d="M 27 29 l 6 0 l 3 5 l -6 0 z"/>
+  <path d="M 30 38 l 6 0 l -3 5 l -6 0 z"/>
+  <path d="M 24 31 l 3 5 l -3 5 l -3 -5 z"/>
+  <path d="M 12 38 l 6 0 l 3 5 l -6 0 z"/>
+  <path d="M 15 29 l 6 0 l -3 5 l -6 0 z"/>
+  <path d="M 9 22 l 3 5 l -3 5 l -3 -5 z"/>
+  <path d="M 12 20 l 6 0 l 3 5 l -6 0 z"/>
+  <path d="M 15 11 l 6 0 l -3 5 l -6 0 z"/>
 </g>
 </svg>
