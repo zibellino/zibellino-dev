@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT-0
 import fs from 'fs'
 import path from 'path'
 
