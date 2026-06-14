@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 
 const pages = ['index', 'music', 'keyboard']
+const sections = ['about']
 const languages = ['en', 'de', 'it', 'hu']
 const translations = []
 
@@ -11,6 +12,13 @@ const $ = {
   title: (page) => translations[$.lang].titles[page || $.page],
   html: (partial, params) => {
     const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : $.page}.html`, 'utf8')
+    return new Function('$', `return \`${content}\``)(params || $)
+  },
+  sections: (params) => {
+    let content = ''
+    return sections.map(section => 
+      content += fs.readFileSync(`html/sections/${section}`}.html`, 'utf8')
+    )
     return new Function('$', `return \`${content}\``)(params || $)
   },
   href: (page, lang) => {
