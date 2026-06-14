@@ -17,7 +17,7 @@ const $ = {
   sections: (params) => {
     let content = ''
     sections.forEach(section => 
-      content += fs.readFileSync(`html/sections/${section}`}.html`, 'utf8')
+      content += fs.readFileSync(`html/sections/${section}.html`, 'utf8')
     )
     return new Function('$', `return \`${content}\``)(params || $)
   },
