@@ -16,7 +16,7 @@ const $ = {
   },
   sections: (params) => {
     let content = ''
-    return sections.map(section => 
+    sections.forEach(section => 
       content += fs.readFileSync(`html/sections/${section}`}.html`, 'utf8')
     )
     return new Function('$', `return \`${content}\``)(params || $)
