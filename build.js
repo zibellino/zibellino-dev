@@ -10,17 +10,21 @@ const translations = []
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   title: (page) => translations[$.lang].titles[page || $.page],
-  sectionTitle: (page) => translations[$.lang].section_titles[page || $.page],
+  sectionTitle: () => translations[$.lang].section_titles[$.section],
   html: (partial, params) => {
     const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : $.page}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
   },
   sections: (params) => {
-    let content = ''
+    let content = '',
+        sectionContent = ''
+  
     sections.forEach(section => 
-      content += fs.readFileSync(`html/sections/${section}.html`, 'utf8')
+      sectionContent += fs.readFileSync(`html/sections/${section}.html`, 'utf8')
+      $.section = section
+      content += new Function('$', `return \`${sectionContent}\``)(params || $)
     )
-    return new Function('$', `return \`${content}\``)(params || $)
+    return content
   },
   href: (page, lang) => {
     page = page !== 'index' ? page : ''
