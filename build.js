@@ -19,11 +19,12 @@ const $ = {
     let content = '',
         sectionContent = ''
   
-    sections.forEach(section => 
-      sectionContent += fs.readFileSync(`html/sections/${section}.html`, 'utf8')
+    sections.forEach(section => {
+      sectionContent = fs.readFileSync(`html/sections/${section}.html`, 'utf8')
       $.section = section
       content += new Function('$', `return \`${sectionContent}\``)(params || $)
-    )
+    })
+  
     return content
   },
   href: (page, lang) => {
