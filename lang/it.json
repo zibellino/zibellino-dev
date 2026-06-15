@@ -1,9 +1,10 @@
 {
-  "code": "it",
-  "path": "it/",
   "titles": {
     "index": "Zibellino",
     "keyboard": "Tastiera",
     "music": "Musica"
+  },
+  "section_titles": {
+    "about": "Contatti"
   }
 }
