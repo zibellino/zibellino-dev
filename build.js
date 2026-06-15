@@ -10,6 +10,7 @@ const translations = []
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   title: (page) => translations[$.lang].titles[page || $.page],
+  sectionTitle: (page) => translations[$.lang].section_titles[page || $.page],
   html: (partial, params) => {
     const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : $.page}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
