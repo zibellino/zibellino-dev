@@ -3,5 +3,8 @@
     "index": "Zibellino",
     "keyboard": "Billentyűzet",
     "music": "Zene"
+  },
+  "section_titles": {
+    "about": "Kapcsolat"
   }
 }
