@@ -3,5 +3,8 @@
     "index": "Zibellino",
     "keyboard": "Tastatur",
     "music": "Musik"
+  },
+  "section_titles": {
+    "about": "Kontakt"
   }
 }
