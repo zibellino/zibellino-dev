@@ -14,6 +14,11 @@ const $ = {
     const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : $.page}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
   },
+  section: (section) => {
+    const content = fs.readFileSync(`html/sections/${section}.html`, 'utf8')
+    $.sectionTitle = translations[$.lang].section_titles[section]
+    return  new Function('$', `return \`${content}\``)($)
+  },
   sections: (params) => {
     let content = '',
         sectionContent = ''
