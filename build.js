@@ -3,7 +3,6 @@ import fs from 'fs'
 import path from 'path'
 
 const pages = ['index', 'music', 'keyboard']
-const sections = ['about']
 const languages = ['en', 'de', 'it', 'hu']
 const translations = []
 
