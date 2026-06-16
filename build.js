@@ -14,9 +14,11 @@ const $ = {
     return new Function('$', `return \`${content}\``)(params || $)
   },
   section: (section) => {
-    const content = fs.readFileSync(`html/sections/${section}.html`, 'utf8')
-    $.sectionTitle = translations[$.lang].section_titles[section]
-    return  new Function('$', `return \`${content}\``)($)
+    const params = {
+      sectionTitle: translations[$.lang].section_titles[section],
+    }
+
+    return $.html('section/contact', params)
   },
   href: (page, lang) => {
     page = page !== 'index' ? page : ''
