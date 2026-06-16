@@ -18,7 +18,7 @@ const $ = {
       sectionTitle: translations[$.lang].section_titles[section],
     }
 
-    return $.html('section/contact', params)
+    return $.html(`section/${section}`, params)
   },
   href: (page, lang) => {
     page = page !== 'index' ? page : ''
