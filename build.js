@@ -20,7 +20,7 @@ const $ = {
   
     sections.forEach(section => {
       sectionContent = fs.readFileSync(`html/sections/${section}.html`, 'utf8')
-      $.sectionTitle = translations[$.lang].section_titles[$.section]
+      $.sectionTitle = translations[$.lang].section_titles[section]
       content += new Function('$', `return \`${sectionContent}\``)(params || $)
     })
   
