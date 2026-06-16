@@ -19,18 +19,6 @@ const $ = {
     $.sectionTitle = translations[$.lang].section_titles[section]
     return  new Function('$', `return \`${content}\``)($)
   },
-  sections: (params) => {
-    let content = '',
-        sectionContent = ''
-  
-    sections.forEach(section => {
-      sectionContent = fs.readFileSync(`html/sections/${section}.html`, 'utf8')
-      $.sectionTitle = translations[$.lang].section_titles[section]
-      content += new Function('$', `return \`${sectionContent}\``)(params || $)
-    })
-  
-    return content
-  },
   href: (page, lang) => {
     page = page !== 'index' ? page : ''
     lang = lang !== 'en' ? lang : ''
