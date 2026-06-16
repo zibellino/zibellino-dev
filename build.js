@@ -10,7 +10,6 @@ const translations = []
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   title: (page) => translations[$.lang].titles[page || $.page],
-  sectionTitle: () => translations[$.lang].section_titles[$.section],
   html: (partial, params) => {
     const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : $.page}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
@@ -21,7 +20,7 @@ const $ = {
   
     sections.forEach(section => {
       sectionContent = fs.readFileSync(`html/sections/${section}.html`, 'utf8')
-      $.section = section
+      $.sectionTitle = translations[$.lang].section_titles[$.section]
       content += new Function('$', `return \`${sectionContent}\``)(params || $)
     })
   
