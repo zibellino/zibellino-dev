@@ -14,11 +14,8 @@ const $ = {
     return new Function('$', `return \`${content}\``)(params || $)
   },
   section: (section) => {
-    const params = {
-      sectionTitle: translations[$.lang].section_titles[section],
-    }
-
-    return $.html(`section/${section}`, params)
+    $.sectionTitle: translations[$.lang].section_titles[section]
+    return $.html(`section/${section}`, $)
   },
   href: (page, lang) => {
     page = page !== 'index' ? page : ''
