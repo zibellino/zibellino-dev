@@ -7,30 +7,20 @@ const translations = []
 
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
-  title: (page) => translations[$.lang].titles[page || $.page],
+  title: () => translations[$.lang].titles['index'],
   html: (partial, params) => {
-    const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : $.page}.html`, 'utf8')
+    const content = fs.readFileSync(`html/${partial ? `partial/${partial}` : 'index'}.html`, 'utf8')
     return new Function('$', `return \`${content}\``)(params || $)
   },
   section: (section) => {
     $.sectionTitle = translations[$.lang].section_titles[section]
     return $.html(`section/${section}`, $)
   },
-  href: (page, lang) => {
-    page = page !== 'index' ? page : ''
+  href: (lang) => {
     lang = lang !== 'en' ? lang : ''
 
-    return `/${[lang, page].filter(Boolean).join('/')}`
+    return `/${[lang].filter(Boolean).join('/')}`
   },
-  pageLinks: () => pages.map(page => {
-    const params = {
-      href: $.href(page, $.lang),
-      text: $.title(page),
-      rel: page === 'index' ? 'author' : '',
-    }
-
-    return $.html('anchor', params)
-  }).join(''),
   langLinks: () => languages.map(lang => {
     const params = {
       href: $.href($.page, lang),
@@ -49,8 +39,7 @@ languages.forEach(lang => {
   if (lang !== 'en') {
     fs.mkdirSync(`public/${lang}`)
   }
-  
-  $.page = page
+
   $.lang = lang
 
   fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}index.html`, $.html())
