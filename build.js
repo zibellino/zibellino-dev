@@ -16,10 +16,9 @@ const $ = {
     $.sectionTitle = translations[$.lang].section_titles[section]
     return $.html(`section/${section}`, $)
   },
-  href: (lang) => `/${lang !== 'en' ? lang : ''}`,
   langLinks: languages.map(lang => {
     const params = {
-      href: $.href(lang),
+      href: `/${lang !== 'en' ? lang : ''}`,
       text: lang.toUpperCase(),
       rel: 'alternate',
       hreflang: lang,
