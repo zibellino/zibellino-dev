@@ -23,7 +23,7 @@ const $ = {
   },
   langLinks: () => languages.map(lang => {
     const params = {
-      href: $.href($.page, lang),
+      href: $.href(lang),
       text: lang.toUpperCase(),
       rel: 'alternate',
       hreflang: lang,
