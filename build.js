@@ -2,7 +2,6 @@
 import fs from 'fs'
 import path from 'path'
 
-const pages = ['index', 'keyboard']
 const languages = ['en', 'de', 'it', 'hu']
 const translations = []
 
@@ -50,11 +49,9 @@ languages.forEach(lang => {
   if (lang !== 'en') {
     fs.mkdirSync(`public/${lang}`)
   }
+  
+  $.page = page
+  $.lang = lang
 
-  pages.forEach(page => {
-    $.page = page
-    $.lang = lang
-
-    fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}${page}.html`, $.html())
-  })
+  fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}index.html`, $.html())
 })
