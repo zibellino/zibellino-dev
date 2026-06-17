@@ -17,7 +17,7 @@ const $ = {
     return $.html(`section/${section}`, $)
   },
   href: (lang) => `/${lang !== 'en' ? lang : ''}`,
-  langLinks: () => languages.map(lang => {
+  langLinks: languages.map(lang => {
     const params = {
       href: $.href(lang),
       text: lang.toUpperCase(),
