@@ -2,7 +2,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const pages = ['index', 'music', 'keyboard']
+const pages = ['index', 'keyboard']
 const languages = ['en', 'de', 'it', 'hu']
 const translations = []
 
