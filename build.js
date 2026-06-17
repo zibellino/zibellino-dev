@@ -14,7 +14,7 @@ const $ = {
     return new Function('$', `return \`${content}\``)(params || $)
   },
   section: (section) => {
-    $.sectionTitle: translations[$.lang].section_titles[section]
+    $.sectionTitle = translations[$.lang].section_titles[section]
     return $.html(`section/${section}`, $)
   },
   href: (page, lang) => {
