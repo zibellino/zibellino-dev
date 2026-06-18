@@ -13,7 +13,7 @@ const $ = {
   },
   section: (section) => {
     $.sectionTitle = translations[$.lang].section_titles[section]
-    return $.html(`section/${section}`, $)
+    return $.html(`section/${section}`)
   },
   langLinks: () => languages.map(lang => {
     const params = {
