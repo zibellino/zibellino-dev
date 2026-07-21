@@ -16,12 +16,10 @@ const $ = {
     $.sectionTitle = translations[$.lang].section_titles[section]
     return $.html(`section/${section}`)
   },
-  sections: () => {
-    return content.sections.map((section) => {
-      $.sectionTitle = section.title[$.lang]
-      $.html(`sections/${section.template}`)
-    })
-  },
+  sections: () => content.sections.map(section => {
+    $.sectionTitle = section.title[$.lang]
+    return $.html(`sections/${section.template}`)
+  }),
   langLinks: () => languages.map(lang => {
     const params = {
       href: `/${lang !== 'en' ? lang : ''}`,
