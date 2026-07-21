@@ -17,7 +17,7 @@ const $ = {
     return $.html(`section/${section}`)
   },
   sections: () => content.sections.map(section => {
-    $.sectionTitle = section.title[$.lang]
+    $.title = section.title[$.lang]
     return $.html(`sections/${section.template}`)
   }),
   langLinks: () => languages.map(lang => {

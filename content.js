@@ -1,18 +1,27 @@
 export default {
-  sections: [ // $.sections() calls /html/sections/<key>.html for each key
+  sections: [
     {
       template: 'music',
-      title: { // ideally either $.title or $.title() should resolve for each pang
+      title: {
         en: 'Music',
         de: 'Musik',
         it: 'Musica',
         hu: 'Zene',
       },
-      albums: [ // $.albums() calls /html/album.html for each element
+      albums: [
         {
-          title: 'Playground', // no translations
+          title: 'Playground',
         }
       ],
+    },
+    {
+      template: 'keyboard',
+      title: {
+        en: 'Keyboard',
+        de: 'Tastatur',
+        it: 'Tastiera',
+        hu: 'Billentyűzet',
+      },
     },
   ],
 }
