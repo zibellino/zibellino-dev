@@ -17,7 +17,7 @@ const $ = {
     return $.html(`section/${section}`)
   },
   sections: () => {
-    return content.map((section, sectionKey) => {
+    return content.sections.map((section, sectionKey) => {
       $.sectionTitle = section.title[$.lang]
       $.html(`sections/${sectionKey}`)
     })
