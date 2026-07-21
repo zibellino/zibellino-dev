@@ -18,7 +18,7 @@ const $ = {
   },
   sections: () => {
     return content.map((section, sectionKey) => {
-      $.sectionTitle = section[$.lang]
+      $.sectionTitle = section.title[$.lang]
       $.html(`sections/${sectionKey}`)
     })
   },
