@@ -1,7 +1,3 @@
-section > h2 {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  position: sticky;
-  top: 5vh;
-  align-self: start;
+* {
+  margin: 0;
 }
