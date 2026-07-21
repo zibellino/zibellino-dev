@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT-0
 import fs from 'fs'
 import path from 'path'
+import content from './content.js'
 
 const languages = ['en', 'de', 'it', 'hu']
 const translations = []
@@ -8,12 +9,18 @@ const translations = []
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   html: (partial, params) => {
-    const content = fs.readFileSync(`html/${partial || 'index'}.html`, 'utf8')
-    return new Function('$', `return \`${content}\``)(params || $)
+    const template = fs.readFileSync(`html/${partial || 'index'}.html`, 'utf8')
+    return new Function('$', `return \`${template}\``)(params || $)
   },
   section: (section) => {
     $.sectionTitle = translations[$.lang].section_titles[section]
     return $.html(`section/${section}`)
+  },
+  sections: () => {
+    return content.map((section, sectionKey) => {
+      $.sectionTitle = section[$.lang]
+      $.html(`sections/${sectionKey}`)
+    })
   },
   langLinks: () => languages.map(lang => {
     const params = {
