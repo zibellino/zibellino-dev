@@ -1,6 +1,7 @@
 export default {
-  sections: { // $.sections() calls /html/sections/<key>.html for each key
-    music: {
+  sections: [ // $.sections() calls /html/sections/<key>.html for each key
+    {
+      template: 'music',
       title: { // ideally either $.title or $.title() should resolve for each pang
         en: 'Music',
         de: 'Musik',
@@ -13,5 +14,5 @@ export default {
         }
       ],
     },
-  },
+  ],
 }
