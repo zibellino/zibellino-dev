@@ -1,4 +1,4 @@
-export default {
+export default (t) => ({
   sections: [
     {
       template: 'music',
@@ -42,4 +42,4 @@ export default {
       },
     },
   ],
-}
+})
