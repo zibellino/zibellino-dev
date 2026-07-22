@@ -2,44 +2,47 @@ export default (t) => ({
   sections: [
     {
       template: 'music',
-      title: {
-        en: 'Music',
-        de: 'Musik',
-        it: 'Musica',
-        hu: 'Zene',
-      },
+      title: t.section_titles.music,
       albums: [
         {
           title: 'Playground',
-        }
+          year: 2026,
+        },
+        {
+          title: 'Digital Shorts EP',
+          year: 2016,
+        },
+        {
+          title: 'There I',
+          year: 2016,
+        },
       ],
     },
     {
       template: 'keyboard',
-      title: {
-        en: 'Keyboard',
-        de: 'Tastatur',
-        it: 'Tastiera',
-        hu: 'Billentyűzet',
-      },
+      title: t.section_titles.keyboard,
     },
     {
       template: 'apps',
-      title: {
-        en: 'Apps',
-        de: 'Apps',
-        it: 'App',
-        hu: 'Alkalmazások',
-      },
+      title: t.section_titles.apps,
+      apps: [
+        {
+          name: 'MangoCodex',
+          repo: 'mango-codex',
+        },
+        {
+          name: 'MangoTree',
+          repo: 'mango-tree',
+        },
+        {
+          name: 'MangoStrudel',
+          repo: 'mango-strudel',
+        },
+      ],
     },
     {
       template: 'contact',
-      title: {
-        en: 'Contact',
-        de: 'Kontakt',
-        it: 'Contatti',
-        hu: 'Kapcsolat',
-      },
+      title: t.section_titles.contact,
     },
   ],
 })
