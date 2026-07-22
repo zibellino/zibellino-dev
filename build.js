@@ -11,7 +11,7 @@ const $ = {
     const template = fs.readFileSync(`html/${partial || 'index'}.html`, 'utf8')
     return new Function('$', `return \`${template}\``)(params || $)
   },
-  sections: () => content.sections.map(section => {
+  sections: () => $.content.sections.map(section => {
     $.title = section.title[$.lang]
     return $.html(`sections/${section.template}`)
   }).join(''),
@@ -28,15 +28,14 @@ const $ = {
 }
 
 languages.forEach(lang => {
-  Object.assign($, content(
+  $.lang = lang
+  $.content = content(
     JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))
-  ))
+  )
 
   if (lang !== 'en') {
     fs.mkdirSync(`public/${lang}`)
   }
-
-  $.lang = lang
 
   fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}index.html`, $.html())
 })
