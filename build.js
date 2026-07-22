@@ -12,7 +12,7 @@ const $ = {
     return new Function('$', `return \`${template}\``)(params || $)
   },
   sections: () => $.content.sections.map(section => {
-    $.title = section.title[$.lang]
+    Object.assign($, section)
     return $.html(`sections/${section.template}`)
   }).join(''),
   langLinks: () => languages.map(lang => {
