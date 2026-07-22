@@ -12,10 +12,6 @@ const $ = {
     const template = fs.readFileSync(`html/${partial || 'index'}.html`, 'utf8')
     return new Function('$', `return \`${template}\``)(params || $)
   },
-  section: (section) => {
-    $.sectionTitle = translations[$.lang].section_titles[section]
-    return $.html(`section/${section}`)
-  },
   sections: () => content.sections.map(section => {
     $.title = section.title[$.lang]
     return $.html(`sections/${section.template}`)

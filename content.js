@@ -23,5 +23,23 @@ export default {
         hu: 'Billentyűzet',
       },
     },
+    {
+      template: 'apps',
+      title: {
+        en: 'Apps',
+        de: 'Apps',
+        it: 'App',
+        hu: 'Alkalmazások',
+      },
+    },
+    {
+      template: 'contact',
+      title: {
+        en: 'Contact',
+        de: 'Kontakt',
+        it: 'Contatti',
+        hu: 'Kapcsolat',
+      },
+    },
   ],
 }
