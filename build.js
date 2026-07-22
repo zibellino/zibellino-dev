@@ -3,8 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import content from './content.js'
 
-const languages = ['en', 'de', 'it', 'hu']
-const translations = []
+const languages = fs.readdirSync('lang').map(f => f.replace('.json', ''))
 
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
@@ -29,7 +28,9 @@ const $ = {
 }
 
 languages.forEach(lang => {
-  translations[lang] = JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))
+  content = content(
+    JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))
+  )
 
   if (lang !== 'en') {
     fs.mkdirSync(`public/${lang}`)
