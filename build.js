@@ -28,9 +28,9 @@ const $ = {
 }
 
 languages.forEach(lang => {
-  content = content(
+  Object.assign($, content(
     JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))
-  )
+  ))
 
   if (lang !== 'en') {
     fs.mkdirSync(`public/${lang}`)
