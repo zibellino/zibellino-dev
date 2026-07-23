@@ -15,6 +15,10 @@ const $ = {
     Object.assign($, section)
     return $.html(`sections/${section.template}`)
   }).join(''),
+  _albums: () => $.albums.map(album => {
+    Object.assign($, album)
+    return $.html('album')
+  }).join(''),
   langLinks: () => languages.map(lang => {
     const params = {
       href: `/${lang !== 'en' ? lang : ''}`,

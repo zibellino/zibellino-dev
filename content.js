@@ -6,14 +6,17 @@ export default (t) => ({
       albums: [
         {
           title: 'Playground',
+          image: 'playground-placeholder-cover.png',
           year: 2026,
         },
         {
           title: 'Digital Shorts EP',
+          image: 'digital-shorts-cover.jpg',
           year: 2016,
         },
         {
           title: 'There I',
+          image: 'there-i-cover.jpg',
           year: 2016,
         },
       ],
