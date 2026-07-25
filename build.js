@@ -12,8 +12,8 @@ const $ = {
     return new Function('$', `return \`${template}\``)(params || $)
   },
   sections: () => $.content.sections.map(section => {
-    Object.assign($, section)
-    return $.html(`sections/${section.template}`)
+    Object.assign(section, $)
+    return $.html(`sections/${section.template}`, section)
   }).join(''),
   langLinks: () => languages.map(lang => {
     const params = {
