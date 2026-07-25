@@ -7,7 +7,7 @@ const languages = fs.readdirSync('lang').map(f => f.replace('.json', ''))
 
 const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
-  html: (partial, params) => Function('$', `return \`${fs.readFileSync(`html/${partial}.html`, 'utf8')}\``)({...params, ...$),
+  html: (partial, params) => Function('$', `return \`${fs.readFileSync(`html/${partial}.html`, 'utf8')}\``)({...params, ...$}),
   langLinks: () => languages.map(
     lang => $.html('anchor', {
       href: `/${lang !== 'en' ? lang : ''}`,
