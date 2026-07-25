@@ -5,13 +5,17 @@
 <title>Zibellino</title>
 <header role="navigation">
 	<button onclick="this.nextElementSibling.toggleAttribute('open')">🌐</button>
-	<dialog>${$.langLinks()}</dialog>
+	<dialog>
+  ${$.languages.map(
+   lang => $.html('langlink', lang)
+  ).join('')}
+ </dialog>
 </header>
 <main>
 	<h1>Zibellino</h1>
  ${$.sections.map(
   section => $.html(`sections/${section.template}`, section)
-).join('')}
+ ).join('')}
 </main>
 <footer>
 	<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC" src="/images/cc-by-nc.png"></a>
