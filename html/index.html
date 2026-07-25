@@ -7,7 +7,7 @@
 	<button onclick="this.nextElementSibling.toggleAttribute('open')">🌐</button>
 	<dialog>
   ${$.languages.map(
-   lang => $.html('langlink', lang)
+   lang => $.html('langlink', {lang: lang})
   ).join('')}
  </dialog>
 </header>
