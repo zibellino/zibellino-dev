@@ -16,8 +16,8 @@ languages.forEach(lang => {
   fs.writeFileSync(
     `public/${lang !== 'en' ? `${lang}/` : ''}index.html`,
     $.html('index', {
-      lang: lang,
-      languages: languages,
+      lang,
+      languages,
       ...content(JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))),
     }),
   )
