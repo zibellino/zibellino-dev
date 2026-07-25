@@ -9,8 +9,7 @@ const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   html: (partial, params) => {
     const template = fs.readFileSync(`html/${partial}.html`, 'utf8')
-    Object.assign(params, $)
-    return new Function('$', `return \`${template}\``)(params)
+    return new Function('$', `return \`${template}\``)({...params, ...$)
   },
   langLinks: () => languages.map(lang => {
     const params = {
