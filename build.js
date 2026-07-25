@@ -9,12 +9,9 @@ const $ = {
   svg: (name) => fs.readFileSync(`public/images/${name}.svg`),
   html: (partial, params) => {
     const template = fs.readFileSync(`html/${partial}.html`, 'utf8')
-    return new Function('$', `return \`${template}\``)(params || $)
+    Object.assign(params, $)
+    return new Function('$', `return \`${template}\``)(params)
   },
-  sections: () => $.content.sections.map(section => {
-    Object.assign(section, $)
-    return $.html(`sections/${section.template}`, section)
-  }).join(''),
   langLinks: () => languages.map(lang => {
     const params = {
       href: `/${lang !== 'en' ? lang : ''}`,
@@ -29,7 +26,7 @@ const $ = {
 
 languages.forEach(lang => {
   $.lang = lang
-  $.content = content(
+  const page = content(
     JSON.parse(fs.readFileSync(`lang/${lang}.json`, 'utf8'))
   )
 
@@ -37,5 +34,5 @@ languages.forEach(lang => {
     fs.mkdirSync(`public/${lang}`)
   }
 
-  fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}index.html`, $.html('index'))
+  fs.writeFileSync(`public/${lang !== 'en' ? `${lang}/` : ''}index.html`, $.html('index', page))
 })
