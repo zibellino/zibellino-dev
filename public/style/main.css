@@ -2,19 +2,10 @@
   max-width: 100%;
 }
 
-section {
-  display: grid;
-  grid-template-columns: 2rem 1fr;
-}
-
 section > h2 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   position: sticky;
   top: 0;
   align-self: start;
-}
-
-section > :not(h2) {
-  grid-column: 2;
 }
