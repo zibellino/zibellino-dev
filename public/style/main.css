@@ -1,3 +1,11 @@
 * {
   max-width: 100vmin;
 }
+
+section > h2 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: sticky;
+  top: 0;
+  align-self: start;
+}
