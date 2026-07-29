@@ -1,6 +1,10 @@
 * {
   max-width: 100vmin;
 }
+section {
+  display: grid;
+  grid-template-columns: var(--title-track) 1fr;
+}
 
 section > h2 {
   writing-mode: vertical-rl;
@@ -8,4 +12,8 @@ section > h2 {
   position: sticky;
   top: 0;
   align-self: start;
+}
+
+section > :not(h2) {
+  grid-column: 2;
 }
