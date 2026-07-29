@@ -4,7 +4,7 @@
 
 section {
   display: grid;
-  grid-template-columns: var(--title-track) 1fr;
+  grid-template-columns: 2rem 1fr;
 }
 
 section > h2 {
