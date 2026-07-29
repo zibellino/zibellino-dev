@@ -1,6 +1,7 @@
 * {
   max-width: 100vmin;
 }
+
 section {
   display: grid;
   grid-template-columns: var(--title-track) 1fr;
