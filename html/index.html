@@ -15,7 +15,7 @@
 	</nav>
 </header>
 ${$.sections.map(
-	section => $.html(`sections/${section.template}`, section)
+	section => $.html(`sections/${section.id}`, section)
 ).join('')}
 <footer>
 	<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="CC-BY-NC" src="/images/cc-by-nc.png"></a>

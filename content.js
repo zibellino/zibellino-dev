@@ -1,7 +1,7 @@
 export default (t) => ({
   sections: [
     {
-      template: 'music',
+      id: 'music',
       title: t.section_titles.music,
       albums: [
         {
@@ -22,29 +22,32 @@ export default (t) => ({
       ],
     },
     {
-      template: 'keyboard',
+      id: 'keyboard',
       title: t.section_titles.keyboard,
     },
     {
-      template: 'apps',
+      id: 'apps',
       title: t.section_titles.apps,
       apps: [
         {
           name: 'MangoCodex',
           repo: 'mango-codex',
+          image: 'codex.png',
         },
         {
           name: 'MangoTree',
           repo: 'mango-tree',
+          image: 'tree.png',
         },
         {
           name: 'MangoStrudel',
           repo: 'mango-strudel',
+          image: 'strudel.png',
         },
       ],
     },
     {
-      template: 'contact',
+      id: 'contact',
       title: t.section_titles.contact,
     },
   ],

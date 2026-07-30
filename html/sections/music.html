@@ -1,6 +1,6 @@
 <section>
   <h2>${$.title}</h2>
-  ${$.albums.map(album => {
-    return $.html('album', album)
-  }).join('')}
+  ${$.albums.map(
+    album => $.html('album', album)
+  ).join('')}
 </section>
