@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 40 40" width="40mm" height="40mm">
+  <polygon points="
+    -9.9,-2.65
+    -9.9,2.65
+    -7.25,7.25
+    -2.65,9.9
+    0.1,14.85
+    0.1,20.15
+    2.65,24.75
+    2.65,9.9
+    7.25,7.25
+    9.9,2.65
+    9.9,-2.65
+    7.25,-7.25
+    2.65,-9.9
+    -2.65,-9.9
+    -7.25,-7.25" 
+           fill="#ffffff" stroke="#888888" stroke-width="0.1"/>
+  <text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="2.5" fill="#888888">Enter</text>
+</svg>
