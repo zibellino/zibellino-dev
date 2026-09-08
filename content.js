@@ -40,6 +40,11 @@ export default (t) => ({
           image: 'tree.png',
         },
         {
+          name: 'MangoCollage',
+          repo: 'mango-collage',
+          image: 'collage.png',
+        },
+        {
           name: 'MangoStrudel',
           repo: 'mango-strudel',
           image: 'strudel.png',
