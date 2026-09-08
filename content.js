@@ -6,7 +6,7 @@ export default (t) => ({
       albums: [
         {
           title: 'Playground',
-          image: 'playground-placeholder-cover.png',
+          image: 'playground-cover.jpeg',
           year: 2026,
         },
         {
